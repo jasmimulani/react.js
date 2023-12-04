@@ -1,0 +1,16 @@
+.box{
+    
+    height: 500px;
+    width: 550px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.row{
+    padding: 10px 0;
+}
+.btn{
+    border-radius: 40px;
+}
