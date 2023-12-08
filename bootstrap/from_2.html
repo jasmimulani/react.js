@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="from_2.css" />
   </head>
   <body class="bg-primary">
-    <form>
+    <form novalidate>
         <div class="box">
             <h2>Creat your account</h2>
             <div class="row">
-                <input class="form-control" type="text" placeholder="MyuserName">
-            </div>
+                <input class="form-control is required" type="text" placeholder="MyuserName" required>
+              </div>
             <div class="row">
                 <input type="password" id="inputPassword5" class="form-control" placeholder="password">
             </div>
@@ -32,6 +32,7 @@
                 <button type="submit" class="btn btn-primary ">Create account</button>
             </div>
         </div>
+
     </form>
 
     <script
