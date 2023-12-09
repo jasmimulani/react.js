@@ -15,19 +15,30 @@
     <link rel="stylesheet" href="from_2.css" />
   </head>
   <body class="bg-primary">
-    <form novalidate>
+    <form novalidate class="was-validated">
         <div class="box">
             <h2>Creat your account</h2>
+
             <div class="row">
-                <input class="form-control is required" type="text" placeholder="MyuserName" required>
-              </div>
+                <input class="form-control is-valid" type="text" placeholder="MyuserName" required>
+                <div class="invalid-feedback">
+                  place provide a valid name
+                </div>
+          </div>
             <div class="row">
-                <input type="password" id="inputPassword5" class="form-control" placeholder="password">
-            </div>
-            <div class="row">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                <input type="password" id="inputPassword5" class="form-control is valid" placeholder="password" required>
+                <div class="invalid-feedback">
+                  place provide a valid password
+                </div>
             </div>
 
+            <div class="row">
+              <input type="e-mail" id="inputPassword5" class="form-control is valid" placeholder="e-mail" required>
+              <div class="invalid-feedback">
+                place provide a valid e-mail
+              </div>
+          </div>
+            
             <div class="row">
                 <button type="submit" class="btn btn-primary ">Create account</button>
             </div>
