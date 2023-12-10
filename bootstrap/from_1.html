@@ -36,8 +36,8 @@
 
       <div class="row" >
         <label class="text">Country</label>
-        <select class="form-select">
-          <option selected>choose..</option>
+        <select class="form-select" required>
+          <option selected disabled value="">choose..</option>
           <option value="1">Bharat</option>
           <option value="2">USA</option>
           <option value="3">UK</option>
@@ -46,8 +46,8 @@
 
       <div class="row">
         <label class="form-label">Gender</label>
-        <select class="form-select">
-          <option selected>Male</option>
+        <select class="form-select"required>
+          <option selected disabled value="">Male</option>
           <option value="1">Female</option>
           <option value="2">Other</option>
         </select>
@@ -88,11 +88,12 @@
 
       <div class="row">
         <div class="col-4">
-          <label class="form-label">Country code</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>USA(+1)</option>
+          <label class="form-label" >Country code</label>
+          <select class="form-select" required>
+            <option selected disabled value="">USA(+1)</option>
           </select>
         </div>
+
         <div class="col-8">
           <label class="form-label">Phone</label>
           <input class="form-control" type="number" placeholder="Enter your Contanct Number." required>

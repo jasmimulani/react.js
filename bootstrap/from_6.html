@@ -1,77 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form-6</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form-6</title>
 
-    <link rel="stylesheet" href="frome_6.css" />
-  </head>
-  <body class="bg-dark">
-   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="frome_6.css" />
+</head>
+
+<body class="bg-dark">
+  <form novalidate="" class="was-validated need-valiadtion">
     <div class="box">
-      <h2 class="form-label">Regiser Today</h2>
-      <div class="from-text">Fill in the data below.</div>
-      <div class="row">
-        <input class="form-control" type="text" placeholder="Full Name."/>
+      <h2 class="form-label">Register Today</h2>
+      <div class="mb-4">Fill in the data below.</div>
+      <div class="position-relative mb-5">
+        <input class="form-control" type="text" placeholder="Full Name." value="" required>
+        <div class="valid-tooltip">
+          Looks good!
+        </div>
       </div>
-
-      <div class="row">
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="E-mail Address"
-        />
+      <div class="position-relative mb-5">
+        <input type="text" class="form-control" placeholder="E-mail Address" required >
+        <div class="valid-tooltip">
+        excellent!
+        </div>
       </div>
-
-      <div class="row">
-        <select class="form-select">
-          <option selected>Position</option>
+      <div class="position-relative mb-5 ">
+        <select class="form-select" required>
+          <option selected disabled value="" >Position</option>
           <option value="1">CA</option>
         </select>
+        <div class="invalid-tooltip">
+          Please select a valid state.
+        </div>
       </div>
-
-      <div class="row">
-        <input
-          type="password"
-          id="inputPassword5"
-          class="form-control"
-          placeholder="password"
-        />
+      <div class="position-relative mb-5">
+        <input type="text" class="form-control" placeholder="password" required>
+        <div class="valid-tooltip">
+          awsoomm!
+        </div>
       </div>
+      <div class="mb-4">
         <label>Gender</label>
-        <input type="checkbox" class="btn-check" id="btn-check-1"  autocomplete="off">
+        <input type="radio" class="btn-check" id="btn-check-1" autocomplete="off">
         <label class="btn btn-dark border-white" for="btn-check">Male</label>
-        <input type="checkbox" class="btn-check" id="btn-check-2"  autocomplete="off">
+        <input type="radio" class="btn-check" id="btn-check-2" autocomplete="off">
         <label class="btn btn-dark border-white" for="btn-check">Female</label>
-        <input type="checkbox" class="btn-check" id="btn-check-3"  autocomplete="off">
+        <input type="radio" class="btn-check" id="btn-check-3" autocomplete="off">
         <label class="btn btn-dark border-white" for="btn-check">Secret</label>
-        <div class="row">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              I confrim that all data are correct
-            </label>
+      </div>
+      <div class="position-relative mb-5">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" required>
+          <label class="form-check-label" for="flexCheckDefault">
+            I confrim that all data are correct
+          </label>
+          <div class="invalid-tooltip">
+            sorry!
           </div>
         </div>
-        <input type="checkbox" class="btn-check" id="btn-check-4" checked autocomplete="off">
-        <label class="btn btn-dark" for="btn-check">Register</label>
+      </div>
+      <input type="checkbox" class="btn-check" id="btn-check-4" checked autocomplete="off">
+      <label class="btn btn-dark" for="btn-check">Register</label>
     </div>
-   
+  </form>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+})()
+  </script>
 
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
- </body>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
