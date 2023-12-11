@@ -43,3 +43,266 @@
     border: 0px;
     border-right: 1px solid rgb(138,137,137);
 }
+
+/* navigation bar start*/
+.border{
+    border-bottom: 1px solid grey;
+}
+.navigation{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+/* 1 shoffy icon*/
+.shoffy{
+    outline: 15%;
+}
+.navi-select select:focus{
+    outline: 0px;
+}
+/* 2 serch button*/
+.search-input{
+    width: 45%;
+    border: 2px solid #0989ff;
+    display: flex;
+    align-items: center;
+}
+.text-input input{
+    width: 100%;
+    border: 0px;
+    padding: 5px 50px 5px 15px;
+}
+.text-input:focus-within input{
+    border: 0px;
+    outline: none;
+}
+.navi-select{
+    width: 40px;
+    border-left: 2px solig rgb(188,185,185);
+    margin-right: 15px;
+    padding-right: 8px;
+}
+.navi-select select{
+    border: 0px;
+    border: none;
+    padding: 0px 20px;
+}
+.search-icon{
+    background-color: #0989ff;
+    color: #ffffff;
+    padding: 7px 25px;
+    font-size: 25px;
+}
+
+/* 3  user */
+.user-info{
+    width: 15%;
+}
+.user-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid rgb(232,226,226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-img i{
+    font-size: 25px;
+    color:gray;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-text{
+  margin-left: 10px;
+}
+.hello{
+    color: rgb(165,162,162);
+    font-size: 12px;
+}
+.Account{
+    font-size: 15px;
+}
+/* 4 small icon */
+.icon{
+    width: 15%;
+    right: 0;
+    position: relative;
+}
+.icon-1{
+    font-size: 20px;
+    margin: 10px;
+}
+.icon-2{
+    font-size: 20px;
+    margin: 10px;
+}
+.icon-3{
+    font-size: 20px;
+    margin: 10px;
+}
+.icon span i:hover{
+    color:#0989ff;
+}
+.red{
+    position:absolute;
+    background-color: crimson;
+    height:19px;
+    width: 19px;
+    border-radius: 100%;
+    color:white;
+    font-size: 12px;
+    border: 2px solid white;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    top:-8px;
+    right: 42%;
+}
+.red-1{
+position:absolute;
+background-color: crimson;
+height:19px;
+width: 19px;
+border-radius: 100%;
+color:white;
+font-size: 12px;
+border: 2px solid white;
+align-items: center;
+text-align: center;
+display: inline-block;
+top:-8px;
+right:17%;
+z-index: 1;
+}
+
+/* navbar*/
+#inherhead2{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+/* 1 drop box*/
+.alldata{
+  display: flex;
+}
+.fa-solid{
+    position: relative;
+    top:2px;
+}
+.alldatachild{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    transition: all 0.3s;
+    position: relative;
+}
+.button{
+    padding: 11px 39px;
+    color: white;
+    background-color: #0989ff;
+    display: flex;
+    font-size: 15px;
+}
+.button ul{
+    margin-left: 12px;
+    margin-right: 60px;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.alldata:hover .head2-drop{
+    display:block;
+}
+.head2drop{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    width: 257px;
+    border: 1px solid black;
+    top:40px;
+    z-index: 10;
+}
+.alldatalist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 10px 0px;
+    cursor: pointer;
+}
+.alldatalist img{
+    width: 30px;
+    height: 30px;
+}
+.sidelist li{
+    font-size: 20px;
+    padding: 5px;
+}
+.sidelist{
+    position: absolute;
+    left: 100%;
+    top:0px;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    display: none;
+}
+.alldatalist:hover .sidelist{
+    display: block;
+}
+/* 2.nav item*/
+.nav-item{
+    width: auto;
+    display: flex;
+    margin: auto;
+    position: relative;
+    right: 8%;
+}
+.head-2-drown{
+    padding: 8px;
+    font-size: 14px;
+    transition: all 0.3s;
+    font-weight: bold;
+    position: relative;
+    flex-wrap: wrap;
+    padding-right: 15px;
+}
+.head-2-drown:hover{
+ color: #0989ff;
+ cursor: pointer;
+}
+
+/* 3 .contect*/
+.head-2-contact{
+    width:auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 0px;
+}
+.head-2-contact p span{
+    font-size: 12px;
+    color: rgb(105,102,102);
+}
+.head-2-contact p{
+    font-size: 14px;
+}
+.head-2-contact i{
+    margin-right:10px;
+}
+.head-2-contact p:hover{ 
+    color: #0989ff;
+}

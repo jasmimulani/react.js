@@ -1,0 +1,15 @@
+@media(max-width:1200px){
+    .container{
+        max-width: 1050px;
+    }
+    /* navbar*/
+    .user-text{
+        display: none;
+    }
+    .red{
+        right:40%;
+    }
+    .red-1{
+        right: 14%;
+    }
+}
