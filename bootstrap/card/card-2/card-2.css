@@ -1,0 +1,36 @@
+body
+{
+    background-color: coral;
+}
+.container
+{
+    margin-top: 50px;
+}
+.card-1
+{
+   height:auto;
+   width: auto;
+   margin: 30px;
+   padding: 40px;
+}
+.card-2
+{
+    height:auto;
+    padding:40px;
+    position: relative;
+}
+.button-2
+{
+    border-radius:30px;
+}
+.label{
+    position: absolute;
+    left:-8%;
+    top:2%;
+    transform: rotate(-35deg);
+    padding: 5px 35px 5px 33px;
+}
+big{
+
+    font-size: 40px;
+}
