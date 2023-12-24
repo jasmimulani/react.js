@@ -1,0 +1,15 @@
+$bg-1:black;
+$bg-2:yellow;
+$bg-3:blue;
+$h-1:100px;
+$h-2:200px;
+$w-1:100px;
+$w-2:200px;
+
+
+.box-1{
+   height: $h-1;
+   width: $w-1;  
+   background-color: $bg-2; 
+}
+   
