@@ -766,3 +766,75 @@ z-index: 1;
     padding: 20px;
     border-top: 1px solid rgb(229, 233, 233); 
  }
+
+ /* card-4*/
+
+ .galaxy-img img{
+    object-fit: cover;
+   overflow: hidden;
+ }
+ .galaxy-img:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+ }
+ .galaxy-img{
+    position: relative;
+ }
+ .galaxy-img:hover .hover-containt{
+    display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+ }
+ .galaxy-text{
+    padding: 20px;
+    border-top: 1px solid rgb(229, 233, 233); 
+ }
+
+ /* card-5*/
+
+ .iphone-img img{
+    object-fit: cover;
+   overflow: hidden;
+ }
+ .iphone-img:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+ }
+ .iphone-img{
+    position: relative;
+ }
+ .iphone-img:hover .hover-containt{
+    display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+ }
+ .iphone-text{
+    padding: 20px;
+    border-top: 1px solid rgb(229, 233, 233); 
+ }
+
+ /* card-6*/
+
+ .Apple-img img{
+    object-fit: cover;
+   overflow: hidden;
+ }
+ .Apple-img:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+ }
+ .Apple-img{
+    position: relative;
+ }
+ .Apple-img:hover .hover-containt{
+    display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+ }
+ .Apple-text{
+    padding: 20px;
+    border-top: 1px solid rgb(229, 233, 233); 
+ }

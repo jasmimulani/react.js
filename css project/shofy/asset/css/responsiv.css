@@ -24,7 +24,7 @@
     }
 
     /* Main-part-3 */
-    .Gaming_headphone
+    .headphone
         {
             width: 42%;
             height: 570px;
@@ -33,13 +33,13 @@
             border-radius: 10px;
             background-color: white;
         }
-        .Gaming_headphone-image img{
+        .headphone-img img{
           display: flex;
           flex-wrap: wrap;
           max-height: 400px;
           max-width: 400px;
         }
-        .Gaming_headphone-text
+        .headphone-text
         {
             padding: 40px;
         }
