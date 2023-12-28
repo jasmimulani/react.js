@@ -2,23 +2,68 @@
 
 
 
-.box-1{
-    height: $h-300;
-    width: $w-300;
-    background-color: $bg-3;
+// .box-1{
+//     height: $h-300;
+//     width: $w-300;
+//     background-color: $bg-3;
 
-    .box-2{
-        height: $h-200;
-        width: $w-200;
-        background-color: $bg-2;
+//     .box-2{
+//         height: $h-200;
+//         width: $w-200;
+//         background-color: $bg-2;
 
-        .box-3{
-            height: $h-100;
-            width: $w-100;
-            background-color: $bg-1;
-        }
-    }
+//         .box-3{
+//             height: $h-100;
+//             width: $w-100;
+//             background-color: $bg-1;
+//         }
+//     }
+// }
+
+
+
+//mixing
+
+@mixin box{
+    height: $h-500;
+    width: $w-500;
+    background-color:$bg-4;
+    @content;
 }
 
+.box-1{
+    @include box
+     
+
+}
+
+.box-2
+{
+    @include box
+    {
+        background-color:$bg-8;
+        width:$w-300;
+        height:$h-300;
 
 
+    }
+}
+ 
+.box-3{
+       @include box
+       {
+
+           background-color:$bg-7;
+                   width:$w-200;
+                   height:$h-200;
+       }
+}
+
+.box-4{
+    @include box
+    {
+        background-color:$bg-6;
+                width:$w-100;
+                height:$h-100;
+    }
+}
