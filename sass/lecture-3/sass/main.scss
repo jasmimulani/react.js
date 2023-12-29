@@ -1,0 +1,77 @@
+@import'variable';
+
+@mixin card
+{
+    height: $h-4;
+    width: $w-3;
+    background-color: $bg-7;
+    border: $border-1;
+    padding: $p-1;
+    margin: $m-1;
+    @content;
+}
+
+@mixin image
+{
+   width: $w-1;
+   height: $h-1;
+}
+
+@mixin btn
+{
+   padding: 10px 20px;
+   background-color:$bg-7;
+   color:$color-2;
+   border-radius:$border-redius-40;
+}
+
+.box
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-1
+{
+    @include card{
+        text-align: center;
+    }
+}
+.card-2
+{
+    @include card{
+        text-align: center;
+        background-color: $bg-4;
+        color: $color-1;
+    }
+}
+.card-3
+{
+    @include card{
+        text-align: center;
+    }
+}
+
+img
+{
+    @include image;
+}
+
+button
+{
+    @include btn;
+}
+
+// .card {
+//     height: $h-4;
+//     width: $w-3;
+//     background-color: $bg-3;
+//     border: $border-1;
+//     padding: $padding-4;
+//     margin: $m-4;
+// }
+
+// &.
+// {
+//     @extend .card-1;
+// }
