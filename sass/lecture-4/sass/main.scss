@@ -1,0 +1,15 @@
+@use'variable' as*;
+
+%error{
+     background-color: $bg-3;
+     border:$b-1;
+     border-width:$bw-2;
+}
+
+.error{
+    @extend %error;
+}
+
+.error{
+    @extend %error;
+}
