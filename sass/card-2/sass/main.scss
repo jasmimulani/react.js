@@ -1,0 +1,47 @@
+@import'variable';
+
+
+@mixin boxes{
+    height: $h-12;
+    width: $w-12;
+    background-color: $bg-3;
+    display: flex;
+    justify-content: center;
+    @content;
+
+}
+
+ .boxes{
+    @include boxes;
+
+ }
+
+ @mixin boxes-1{
+ height: $h-6;
+ width: $w-4;
+ background-color:$bg-1;
+ border-radius:$radius-4;
+ @content;
+ }
+ .boxes-1{
+    @include boxes-1;
+ }
+
+ @mixin img{
+    height: $h-2;
+    width: $w-4;
+    border-radius: $radius-4 $radius-4 $radius-0 $radius-0;
+    @content;
+ }
+
+ .ants img{
+    @include img;
+ }
+
+ @mixin grils{
+    height: $h-3;
+    width: $w-3;
+
+ }
+
+ 
