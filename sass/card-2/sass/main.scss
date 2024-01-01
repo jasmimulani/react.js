@@ -1,47 +1,111 @@
-@import'variable';
+@import 'veriable';
 
 
 @mixin boxes{
     height: $h-12;
     width: $w-12;
-    background-color: $bg-3;
+    background-color: $bg-2;    
+    display: flex;
+    justify-content: center;
+    @content;
+   }
+   
+   .boxes
+   {
+       @include boxes;
+   }
+@mixin boxes-1
+{
+   height: $h-6;
+   width: $w-4;
+   background-color: $bg-1;
+   border-radius: $radius-4;
+   @content;
+}
+.boxes-1
+{
+    @include boxes-1;
+}
+
+@mixin image
+{
+    height: $h-2;
+    width: $w-4;
+    border-radius: $radius-4 $radius-4 $radius-0 $radius-0;
+    @content;
+}
+
+.ants img{
+    @include image;
+}
+
+@mixin gril
+{
+    height: $h-2;
+    width: $w-2;
+    border-radius: $radius-50;
+    position: relative;
+    top: $top-100;
+    left:$left-25;
     display: flex;
     justify-content: center;
     @content;
 
 }
+.gril img
+{
+    @include gril;
+}
 
- .boxes{
-    @include boxes;
-
- }
-
- @mixin boxes-1{
- height: $h-6;
- width: $w-4;
- background-color:$bg-1;
- border-radius:$radius-4;
- @content;
- }
- .boxes-1{
-    @include boxes-1;
- }
-
- @mixin img{
-    height: $h-2;
-    width: $w-4;
-    border-radius: $radius-4 $radius-4 $radius-0 $radius-0;
+@mixin box-2
+{
+    position: relative;
+    top: $top-100 ;
+    text-align: center;
     @content;
- }
+}
 
- .ants img{
-    @include img;
- }
+.box-2
+{
+    @include box-2;
+}
+@mixin h1 {
+    display: inline-block;
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight:900 ;
+}
 
- @mixin grils{
-    height: $h-3;
-    width: $w-3;
+h1{
+    @include h1;
+}
 
- }
+@mixin button
+{
+    background-color: $bg-3;
+    padding: $p-5 $p-100;
+    border-radius: $radius-4;
+}
 
- 
+button
+{
+   @include button;
+
+}
+
+
+   
+//    .box-1{
+//      @include font-size(200px){
+//        text-align: center;
+//      }
+//    }
+   
+//    .box-2{
+//      @include font-size(100px){
+//        color:white;
+//      }
+//    }
