@@ -1,0 +1,1 @@
+var box1="cloths";
