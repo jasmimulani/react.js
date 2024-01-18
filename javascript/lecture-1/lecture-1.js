@@ -86,7 +86,4 @@
     // document.write(x + "<br>" + y + "<br>" + z);
     // console.log(y + "<br>");
 
-    // let Vasu = "abc"
-    // let vasu = "def"
-    // console.log(vasu);
 }
