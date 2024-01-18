@@ -1,1 +1,1 @@
-var box1="cloths";
+console.log(number2)
