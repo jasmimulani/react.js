@@ -174,85 +174,117 @@ Ex: ! (A && B) is false.
 
 // qestion-1
 
-//  var a=1+2*3       ans=7
-//  console.log(a) 
+               //  var a=1+2*3       ans=7
+              //  console.log(a) 
 
 // 2]
-//   var b=1+"2"*3    ans=7         3*2=6+1
-//  console.log(b)
+//            var b=1+"2"*3           ans=7         3*2=6+1
+//            console.log(b)
 
  // 3]
-//  var c= "1"+"2"*3    ans=16    3*2=6
-//  console.log(c)                 str hovathi 1 as it is
+//               var c= "1"+"2"*3    ans=16    3*2=6
+//              console.log(c)                 str hovathi 1 as it is
 
 // qestion-2
 
 //  1]
-      //var  a=1+2**3/2-1
-      // console.log(a)  ans=4        nathi khbr
+                    //var  a=1+2**3/2-1
+                  // console.log(a)  ans=4        nathi khbr
 
-      // 2]
-      // var  b=9/2*3
-      //   console.log(b)    ans=13.5        9/2=4.5
-      //                                     4.5 *3
+// 2]
+                 // var  b=9/2*3
+              //   console.log(b)    ans=13.5        9/2=4.5*3
+                                         
 
-      //  3]                                 3*2=6/9
-      //  var c = 9/(2*3)                       ans= 1.5
-      //  console.log(c)
-
-
-      // qestion-3
-      // 1]
+//  3]                                 3*2=6/9
+            //  var c = 9/(2*3)                       ans= 1.5
+           //  console.log(c)
 
 
+      
+  // qestion-3
+  //  1]
+             // {
+            //  x = 1;
+           //  x++;
+          //  alert(x)   ans 2
+        // }
 
+// 2]
 
-      // qestion-4
-      // 1]
+          //  {
+         //   x = 1;
+        //   alert(++x)   ans 2
+       //  }   
+// 3]
+         //  {
+       //    var x = 1;
+      //   alert(x++)          ans-2
+     //  }
 
-      //  var a= 1==01
-      //  console.log(a)          ans = true
+  // qestion-4
+  // 1]
 
-      // 2]
-      //  var b = 1===01
-      //   console.log(b)          ans = ture
+            //  var a= 1==01
+           //  console.log(a)          ans = true
 
-      // 3]
-      // var c ="1"==01
-      // console.log(c)           ans = true
+ // 2]
+               //  var b = 1===01
+             //   console.log(b)          ans = ture
 
-      // 4]
+ // 3]
+                 // var c ="1"==01
+                // console.log(c)           ans = true
 
-        // var d="1" == "01"    ans = false
-        // console.log(d)
+// 4]
+
+           // var d="1" == "01"    ans = false
+           // console.log(d)
           
 
-        // var  e=       "1" == 0 + 1            true
-        // var  f=       "1" == 0 + "1"          false
-        // var  g=       "1" == 0 * 1            false
-        // var  h=       "1" == 0 * "1"          false
+               // var  e=       "1" == 0 + 1            true
+              // var  f=       "1" == 0 + "1"          false
+              // var  g=       "1" == 0 * 1            false
+              // var  h=       "1" == 0 * "1"          false
 
-        // console.log(e)
-        // console.log(f)
-        // console.log(g)
-        // console.log(h)
+              // console.log(e)
+             // console.log(f)
+            // console.log(g)
+          // console.log(h)
 
-        // qestion-5
+ // qestion-5
 
-      //  var a= true && false                 false
-      // var  b=  true && false || true         true
-      //  var c= true && false || !true          false
-      //  var d= !(true && false)                 true
+             //  var a= true && false                 false
+            // var  b=  true && false || true         true
+           //  var c= true && false || !true          false
+          //  var d= !(true && false)                 true
        
-      //   console.log(a)
-      //   console.log(b)
-      //   console.log(c)
-      //   console.log(d)
+            //   console.log(a)
+           //   console.log(b)
+          //   console.log(c)
+         //   console.log(d)
 
-      // qestion-6
+ // qestion-6
+         
+              // 1]
+              //  var x="123";
+             //  var y = 123;
+             //  z =( x + y );
+            //  console.log(z)          ans - 123123
 
-      // 1]
-        //  var x="123";
-        //  var y = 123;
-        //  z =( x + y );
-        //  console.log(z)           123123
+// qestion-10
+ // 1]
+                 //  var a = "1"
+               //  console.log(typeof(a))  ans-string
+
+ // 2]
+               //  var b =5
+             //  console.log(typeof(b))
+            //     ans-Number
+
+
+
+ // qestion-11
+             // var x="123"
+             // var y= 123;     ans 123123
+               // alert(x+y)
