@@ -238,18 +238,18 @@ Ex: ! (A && B) is false.
 
 // 4]
 
-           // var d="1" == "01"    ans = false
-           // console.log(d)
+          //  var d="1" == "01"    //ans = false
+          //  console.log(d)
           
 
-               // var  e=       "1" == 0 + 1            true
-              // var  f=       "1" == 0 + "1"          false
-              // var  g=       "1" == 0 * 1            false
-              // var  h=       "1" == 0 * "1"          false
+          //      var  e="1" == 0 + 1          //  true
+          //     var  f="1" == 0 + "1"          //false
+          //     var  g="1" == 0 * 1            //false
+          //     var  h="1" == 0 * "1"          //false
 
-              // console.log(e)
-             // console.log(f)
-            // console.log(g)
+          //     console.log(e)
+          //    console.log(f)
+          //   console.log(g)
           // console.log(h)
 
  // qestion-5
@@ -271,6 +271,15 @@ Ex: ! (A && B) is false.
              //  var y = 123;
              //  z =( x + y );
             //  console.log(z)          ans - 123123
+
+ // qestion-7
+
+              // var mark =90
+              // var mark=(mark <35)?"faill":"pass";
+              // console.log(mark)
+
+  // qestion-8
+                     
 
 // qestion-10
  // 1]

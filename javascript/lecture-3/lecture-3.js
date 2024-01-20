@@ -61,31 +61,62 @@
 
     // 4]
 // {
-//       var per=76
+//       var per=50  
 
-//       if(per>75)
+//       if(per>=80)
 //  {
-//      document.write("grade A")
+//       document.write(per)
+//      document.write("\n grade A+")
 
 //  } 
-//  else if( per<60&&per>75)
+//  else if( per >= 70)
 //  {
+//     document.write(per)
+//     document.write("\n grade A")
 
-//     document.write("grad B")
-
-//  } else if(per<45&&per>60) 
+//  } else if(per >= 60) 
 //  {
+//     document.write(per)
+//     document.write("\n grade B")
 
-//     document.write("grad C")
-
-//  } else if (per<35&&per>45)
+//  } else if (per >= 50)
 //  {
-
-//         document.write("grad D")
+//         document.write(per)
+//         document.write("\n grade C")
 //  }
 
 //  else
 //  {
-//     document.write("fail grad E")
+//     document.write(per)
+//     document.write("\n fail grade E")
 //  }
 // }
+
+// 1]
+    //  var a=-9*3
+    //  document.write(a)
+    //  ans:27
+
+    // 2]
+    //    3]
+    //   
+    //  4]
+    
+ // 5]
+           // var a=5/10
+          // console.log(a)
+
+
+
+    // 6]
+    // var a=(4==4)
+    // document.write(a)
+
+    // 7]
+    //    var b =( 4!=5)
+    //    document.write(b)
+
+    // 8]
+
+    //  var c= (7<=8)
+    //   document.write(c)
