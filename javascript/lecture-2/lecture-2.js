@@ -278,7 +278,9 @@ Ex: ! (A && B) is false.
               // var mark=(mark <35)?"faill":"pass";
               // console.log(mark)
 
-  // qestion-8
+  // qestion-8   html maa che
+
+  //qestion-9
                      
 
 // qestion-10

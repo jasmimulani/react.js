@@ -1,6 +1,5 @@
 // 1]
 
-
 // let num = 8
 
 // console.log(num)
@@ -30,10 +29,10 @@
     
 // 3]    
 
-    //    let input = 3;
+    //  let input = 3;
     //  switch(input)
     //  {
-    //     case 5:
+    //     case 1:
     //         let a = 10 + 20
     //         console.log(a)
     //         break;
@@ -97,26 +96,32 @@
     //  document.write(a)
     //  ans:27
 
-    // 2]
-    //    3]
+ // 2]
+        //     var a= "value is"
+        //     var b = 50
+        //     var c = `"${a} ${b}"`
+        //    console.log(c)
+//  3]
+           //  var a=17%5
+          //  console.log(a)
     //   
-    //  4]
-    
+//  4]
+            // var b=5%17
+            // console.log(b)
+
  // 5]
            // var a=5/10
           // console.log(a)
 
-
-
-    // 6]
+ // 6]
     // var a=(4==4)
     // document.write(a)
 
-    // 7]
+ // 7]
     //    var b =( 4!=5)
     //    document.write(b)
 
-    // 8]
+ // 8]
 
     //  var c= (7<=8)
     //   document.write(c)
