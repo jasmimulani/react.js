@@ -281,6 +281,11 @@ Ex: ! (A && B) is false.
   // qestion-8   html maa che
 
   //qestion-9
+     
+  // var height=200.56;
+  // var type=(height>=190)? "tall" : "short";
+  // console.log(type)
+          
                      
 
 // qestion-10
@@ -296,6 +301,10 @@ Ex: ! (A && B) is false.
 
 
  // qestion-11
-             // var x="123"
-             // var y= 123;     ans 123123
-               // alert(x+y)
+            //  var x="123"
+            //  var y= 123;    // ans 123123
+            //    alert(x+y)
+
+
+    
+     
