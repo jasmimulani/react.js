@@ -24,7 +24,7 @@
     }
 
     /* Main-part-3 */
-    .headphone
+    .gaming-headphone
         {
             width: 42%;
             height: 570px;
@@ -33,18 +33,18 @@
             border-radius: 10px;
             background-color: white;
         }
-        .headphone-img img{
+        .gaming-headphone-img img{
           display: flex;
           flex-wrap: wrap;
           max-height: 400px;
           max-width: 400px;
         }
-        .headphone-text
+        .gaming-headphone-text
         {
             padding: 40px;
         }
 
-        .antec_air_cooler
+        .antec-air-cooler
         {
             width: 42%;
             height: 570px;
@@ -53,18 +53,18 @@
             border-radius: 10px;
             background-color: white;
         }
-        .antec_air_cooler img
+        .antec-air-cooler-img img
         {
             object-fit: cover;
             overflow: hidden;
             max-height: 400px;
             max-width: 400px; 
         }
-        .antec_air_cooler-text
+        .antec-air-cooler-text
         {
             padding: 40px;
         }
-         .Sony_Lady_fitness_watch
+         .Sony-Lady-fitness-watch
         {
             display: none;
         }

@@ -1044,14 +1044,14 @@ z-index: 1;
    height: 315px;
    width: 215px;
 }
-.gaming-headphone-img :hover img{
+.gaming-headphone-img:hover img{
    transform: scale(1.1);
    transition: 1s;
 }
 .gaming-headphone-img{
    position: relative;
 }
-.gaming-headphone-img :hover .hover-containt{
+.gaming-headphone-img:hover .hover-containt{
    display: block;
    transform: translate(30px);
    transform: scale(1.3);
@@ -1060,4 +1060,340 @@ z-index: 1;
 .gaming-headphone-text{
    padding: 25px;
    border-top: 2px solid rgb(229, 233, 233);
+}
+
+/* 2.air-cooler */
+.antec-air-cooler{
+   height:450px;
+   width:315px;
+   border:1px solid rgb(229, 233, 233);
+   justify-content: space-between;
+   border-radius: 10px;
+   background-color: white;
+}
+
+.antec-air-cooler-img img{
+   object-fit: cover;
+   overflow: hidden;
+   height: 315px;
+   width: 315px;
+}
+.antec-air-cooler-img:hover img{
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.antec-air-cooler-img{
+   position: relative;
+}
+.antec-air-cooler-img:hover .hover-containt{
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+.antec-air-cooler-text{
+   padding:  20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/* 3] sony-watch */
+.sony-ledy-fitness-watch{
+   height:450px;
+   width:315px;
+   border:1px solid rgb(229, 233, 233);
+   justify-content: space-between;
+   border-radius: 10px;
+   background-color: white;
+}
+
+.sony-ledy-fitness-watch-img img{
+   object-fit: cover;
+   overflow: hidden;
+   height: 315px;
+   width: 315px;
+}
+.sony-ledy-fitness-watch-img:hover img{
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.sony-ledy-fitness-watch-img{
+   position: relative;
+}
+.sony-ledy-fitness-watch-img:hover .hover-containt{
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+.sony-ledy-fitness-watch-text{
+   padding:  20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/* section-6 */
+.wrap-cintaint{
+   width: 30%;
+   height: 720px;
+}
+.sticky{
+   position: sticky;
+   top:160px;
+}
+
+/* haget */
+.gedgets{
+   height: 350px;
+   width: 350px;
+   padding: 30px;
+   border:  3px solid rgb(252,34,70);
+   border-radius: 10px;
+   overflow: hidden;
+   margin-left: -9px;
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 13px;
+}
+
+.girl-img{
+   position: relative;
+   bottom: -31px;
+   left: 140px;
+}
+.gedgets-text{
+   position: relative;
+   top:-290px
+}
+.gedgets-text h3{
+   position: relative;
+   margin-bottom: 15px;
+   padding-bottom: 10px;
+   border-bottom: 2px solid rgb(45,45,204);
+}
+.gedgets span{
+   font-size: 14px;
+}
+.gedgets span i{
+   margin-left: 5px;
+}
+
+.list{
+   font-size: 15px;
+   list-style-type: disc;
+   margin-left: 10px;
+   line-height: 2;
+   margin-bottom: 10px;
+}
+
+li:hover{
+   color: blue;
+}
+.arrow{
+   font-size: 15px;
+   font-weight: 600px;
+   margin-top: 30px;
+}
+
+/* novelty */
+.novelty{
+   position:sticky;
+   right: 10px;
+}
+.novelty-img{
+   height: 150px;
+   width: 300px;
+   object-fit: cover;
+   position: absolute;
+   left: -10px;
+}
+.novelty-text{
+   z-index: 1;
+   font-size: 22px;
+   color:white;
+   position: relative;
+   padding: 30px;
+}
+.part-3{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-bottom: 50px;
+}
+.section-6{
+   height: 375px;
+   width: 235px;
+   border: 1px solid rgb(229,233,233);
+   display: flex;
+   flex-flow: wrap;
+   justify-content: space-between;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+.part-3-fix{
+   width: 70%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.section-3:hover{
+   box-shadow: 1px 1px 3px rgb(176,174,174);
+}
+.wireless-img-1{
+   object-fit: cover;
+   overflow: hidden;
+}
+.wireless-img-1:hover img{
+ transform: scale(1.1);
+ transition: 1s;
+}
+.wireless-img-1{
+   position: relative;
+}
+.section-6:hover{
+   box-shadow: 2px 2px 5px rgb(176,174,174);
+}
+.hover-containt-1{
+   display: none;
+   position: absolute;
+   right: 20px;
+   bottom: 50px;
+   transition: 1.5s;
+}
+.wireless-img-1:hover .hover-containt-1{
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+.wireless-text-1{
+   padding: 20px;
+   border-top: 1px solid rgb(229,233,233);
+}
+
+/* 2-gaming-headphone */
+.gaming-img-1 img{
+   object-fit: cover;
+   overflow: hidden;
+}
+.gaming-img-1:hover img{
+   transform: scale(1.1);
+   transition: 1s;
+}
+.gaming-img-1{
+   position: relative;
+}
+.gaming-img-1:hover .hover-containt-1{
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+.gaming-text-1{
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233, 233);
+}
+
+/* 3-headphone-with-mic */
+.mic-img-1 img{
+   object-fit: cover;
+   overflow: hidden;
+}
+.mic-img-1:hover img{
+   transform: scale(1.1);
+   transition: 1s;
+}
+.mic-img-1{
+   position: relative;
+}
+.out-stock{
+   position: absolute;
+   margin: 5px 5px 5px 150px;
+   padding: 3px 3px;
+   color: white;
+   font-size: 12px;
+   border-radius: 5px;
+   z-index: 1;
+   background-color: crimson;
+}
+.mic-img-1:hover .hover-containt-1{
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+.mic-text-1{
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233,233);
+}
+
+/* 4.galaxy */
+.galaxy-img-1 img{
+   object-fit: cover;
+   overflow: hidden;
+}
+.galaxy-img-1:hover img{
+   transform: scale(1.1);
+   transition: 1s;
+}
+.galaxy-img-1{
+   position: relative;
+}
+.galaxy-img-1:hover .hover-containt-1{
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+.galaxy-text-1{
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233,233);
+}
+
+/* 5 iphone */
+.iphone-img-1 img{
+   object-fit: cover;
+   overflow: hidden;
+}
+.iphone-img-1:hover img{
+   transform: scale(1.1);
+   transition: 1s;
+}
+.iphone-img-1{
+   position: relative;
+}
+
+.iphone-img-1:hover .hover-containt-1{
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+.iphone-text-1{
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233,233);
+}
+
+/* 6 apple */
+.apple-img-1 img{
+   object-fit: cover;
+   overflow: hidden;
+}
+.apple-img-1:hover img{
+   transform: scale(1.1);
+   transition: 1s;
+}
+.apple-img-1{
+   position: relative;
+}
+
+.apple-img-1:hover .hover-containt-1{
+   display: block;
+   transform: translate(30px);
+   transform: scale(1.3);
+   transition: 2s;
+}
+.apple-text-1{
+   padding: 20px;
+   border-top: 1px solid rgb(229, 233,233);
 }
