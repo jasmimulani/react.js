@@ -23,7 +23,6 @@ size	Returns the number of elements in a Map
     //   console.log(data);
     //   console.log(data.size);
 }
-
   /* The set() method can also be used to change existing Map values */
 {
     // const newmap = new Map();
@@ -76,8 +75,7 @@ size	Returns the number of elements in a Map
     //      console.log(newmap.delete("item-1"));
     //      console.log(newmap);
 }
-/* The has() method returns true if a key exists in a Map */
-    
+/* The has() method returns true if a key exists in a Map */   
 {
     // const data = new Map([
     //     ["option-1" , 20],
@@ -89,7 +87,6 @@ size	Returns the number of elements in a Map
 
     // console.log(data.has("option-4"));
 }
-
 {
     // const data = new Map([
     //   ["option-1" , 20],
@@ -102,13 +99,9 @@ size	Returns the number of elements in a Map
     //      console.log(hasss);
     //      console.log(data.size);
 }
-
  /* Note : forEach() after function lecture */
-
 /* Set Methods */
-
 /*
-
 new Set()	Creates a new Set
 add()	Adds a new element to the Set
 delete()	Removes an element from a Set
@@ -117,7 +110,6 @@ values()	Returns an iterator with all the values in a Set
 size	Returns the number of elements in a Set
 
 */
-
 {
     // const x = new Set([10,20,30]);
     // console.log(x);
@@ -135,7 +127,6 @@ size	Returns the number of elements in a Set
 
 }
 {
-
     // const newset = new Set();
     // const a = "a";
     // const b = "b";
@@ -160,8 +151,6 @@ size	Returns the number of elements in a Set
     // let y = x. has("a");
     // console.log(y);
 }
- 
-
 {
     // const x = new Set(["a" , "b" , "c"]);
     // let y = x.values();
