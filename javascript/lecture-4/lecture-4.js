@@ -81,34 +81,34 @@
          
 // 4]
 
-{
-     let Number = 38;
-     let guessCount = 0;
-     let guess = 5;
+// {
+//      let Number = 38;
+//      let guessCount = 0;
+//      let guess = 5;
    
-     for (guessCount; guessCount < guess; guessCount++) {
-       let user = prompt("Enter a number between 1 and 100");
+//      for (guessCount; guessCount < guess; guessCount++) {
+//        let user = prompt("Enter a number between 1 and 100");
    
-       if (user == Number) {
-         alert(
-           "Congratulations! You win the game ***"
-         );
-         break;
-       }
+//        if (user == Number) {
+//          alert(
+//            "Congratulations! You win the game ***"
+//          );
+//          break;
+//        }
    
-       if (user > Number) {
-         alert("guess is too high. Try again.");
-       } else if (user< Number) {
-         alert(" guess is too low. Try again.");
-       }
+//        if (user > Number) {
+//          alert("guess is too high. Try again.");
+//        } else if (user< Number) {
+//          alert(" guess is too low. Try again.");
+//        }
    
-       if (guessCount == guess) {
-         alert(
-           "Sorry, your guess limit over. \n you are a fail."
-         );
-       }
-     }
-   }   
+//        if (guessCount == guess) {
+//          alert(
+//            "Sorry, your guess limit over. \n you are a fail."
+//          );
+//        }
+//      }
+//    }   
 
 // 5]
 //  while
@@ -141,7 +141,7 @@
 // for-loop
 
 // let n1=0, n2=1 ,next_num, i=1
-// let num =10
+// let num = 10
 //  document.write("fibonacci series:")
 //  for(i=1; i<=num; i++)
 //  {

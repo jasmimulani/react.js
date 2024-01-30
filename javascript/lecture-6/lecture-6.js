@@ -41,7 +41,7 @@
     // let x = 1
     // let x = "000"
     // let x ="111"
-    let x = undefined; 
+    // let x = undefined; 
   // let x = NaN;
   // let x = null;
   // let x = Infinity;
@@ -53,7 +53,7 @@
   // let x = [100];
   // let x = ["Hello" , "Hi"];
   // let x =function(){};
-  // let x = {};
+  let x = {};
 
     console.log(typeof(x));
   
