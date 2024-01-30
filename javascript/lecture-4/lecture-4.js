@@ -81,6 +81,35 @@
          
 // 4]
 
+{
+     let Number = 38;
+     let guessCount = 0;
+     let guess = 5;
+   
+     for (guessCount; guessCount < guess; guessCount++) {
+       let user = prompt("Enter a number between 1 and 100");
+   
+       if (user == Number) {
+         alert(
+           "Congratulations! You win the game ***"
+         );
+         break;
+       }
+   
+       if (user > Number) {
+         alert("guess is too high. Try again.");
+       } else if (user< Number) {
+         alert(" guess is too low. Try again.");
+       }
+   
+       if (guessCount == guess) {
+         alert(
+           "Sorry, your guess limit over. \n you are a fail."
+         );
+       }
+     }
+   }   
+
 // 5]
 //  while
 
@@ -243,6 +272,17 @@
 
 // 11.find the first odd number in a sequence using a while loop and break statement
 
+//  {
+//     let i = 0;
+//     while (true) {
+//       if (i % 2 !== 0) {
+//         document.write("The first odd number is:"+ i);
+//         break;
+//       }
+//       i++;
+//     }
+//   }  
+
 // 12.cheack if a number is prime using a for loop and break statment
 // {
 //      let number =29;
@@ -287,6 +327,18 @@
 // }
 
 //16.print even number in a specific range using a for loop and continue statement
+
+// statement
+// {
+//   let m = 1;
+//   let n = 40;
+
+//   for (let i = m; i <= n; i++) {
+//     if (i % 2 !== 0) {
+//       continue;
+//     }
+//     document.write(i + "\n");}
+// }
 
 
 /* 17.Skip numbers divisible by 5 using a do-while loop and continue statement */
