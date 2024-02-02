@@ -92,18 +92,18 @@ The syntax for Math any methods is : Math.method(number)
 // console.log(math9);
 
 
-let math10  = Math.abs(20);
-console.log(math10);
+// let math10  = Math.abs(20);
+// console.log(math10);
 
 //Math.min() and Math.max():-
 
 //Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments.
 //Example:-
 
-let math11  = Math.min(101 , -20 , 60  , 87  , 50);
-let math12  = Math.max(101 , 20 , 60  , 87  , 50);
-console.log(math11);
-console.log(math12);
+// let math11  = Math.min(101 , -20 , 60  , 87  , 50);
+// let math12  = Math.max(101 , 20 , 60  , 87  , 50);
+// console.log(math11);
+// console.log(math12);
 
 		
 
@@ -113,8 +113,8 @@ console.log(math12);
 
 //Example:-
 
-let math13  = Math.random()
-console.log(math13);
+// let math13  = Math.random()
+// console.log(math13);
 
 //Math.sin():-
 
@@ -124,8 +124,8 @@ console.log(math13);
 
 //Example:-
 
-let math14 = Math.sin(30*3.14/180)	
-console.log(math14);	
+// let math14 = Math.sin(30*3.14/180)	
+// console.log(math14);	
 
 //Math.cos():-
 
@@ -135,8 +135,8 @@ console.log(math14);
 
 //Example:-
 
-let math15 = Math.cos(60*3.14/180);
-console.log(math15);
+// let math15 = Math.cos(60*3.14/180);
+// console.log(math15);
 
 
 //Math.log():-
@@ -145,8 +145,8 @@ console.log(math15);
 //The natural logarithm returns the time needed to reach a certain level of growth.
 //Example:-
 
-let math16 = Math.log2(15.27)
-console.log(math16);
+// let math16 = Math.log2(15.27)
+// console.log(math16);
 	
 
 //Math.log2():-
@@ -179,10 +179,6 @@ console.log(math16);
 // 1*2*3*4*5*6 720
 
 
-
-
-
-
 // TASK
 
 
@@ -194,13 +190,14 @@ console.log(math16);
 // console.log("9" > "19")
 // console.log("09" > "19")
 
-// const f= new Boolean(false);
+// const f = null;
 // if(f){
 //    console.log(1);
 // }else{
 //    console.log(2);
 // }
 // console.log(typeof f);
+
 
 // let x=100;
 // let y=x++;
@@ -214,3 +211,4 @@ console.log(math16);
 //    a += 1;
 //  }
 // console.log(a);
+
