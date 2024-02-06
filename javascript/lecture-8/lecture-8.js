@@ -16,7 +16,8 @@ ValueOf()	        Returns a number as a number
 
 // let number2 = number1.toString();
 // console.log(number2);
-// console.log(typeof(2));
+// console.log(typeof(number2));
+
 
 // let number3 = (89+20).toString();
 // console.log(number3);
