@@ -97,6 +97,149 @@
 // let String26 = String24.replace("MOST" , "index")
 // console.log(String25);
 
+/*  string replaceall() */
+
+// let string27 = "WHAT ARE MOST HARD MOST FOO."
+// let string28 = string27.replaceAll(/MOST/g,"jasmi")
+// let string29 = string27 .replaceAll(/MOST/i, "jasmi") //eroor
+// console.log(string28);
+
+/* string touppercase() */
+
+// let string30 = "This is most common language"
+// let string31 = string30.toLocaleUpperCase();
+// console.log(string31);
+
+/* string tolowercase() */
+
+// let string32 = "THIS IS MOST COMMON LANGUAGE"
+// let string33 = string32.toLowerCase();
+// console.log(string33);
+
+/* string concat() */
+
+// let string34 = "hello"
+// let string35 = "wolrd"
+// let string36 = "how are tou !"
+// let string37 = string34.concat( ""+ string36+ " "+ string35)
+// console.log(string37);
+
+/* string trim() */
+
+// let string38 = "    This is most common lecture!    "
+// console.log(string38);
+// console.log(string38.length);
+// let string39 = string38.trim()
+// console.log(string39);
+// console.log(string39.length);
+
+/* string srimstart */
+
+// let string40 = "    this is most common lecture!    "
+// console.log(string40);
+//  console.log(string40.length);
+// let string41 = string40.trimStart();
+// console.log(string41);
+// console.log(string41.length);
 
 
+/* string trimend */
 
+// let string42 = "    this is most common lecture!     "
+// console.log(string42);
+// console.log(string42.length);
+// let string43 = string42.trimEnd();
+// console.log(string43);
+// console.log(string43.length);
+
+/* string padstrat */
+
+// let string44 = "this is common lanuguage!"
+// console.log(string44);
+// console.log(string44.length);
+// let string45 = string44.padStart(30 , "1");
+// console.log(string45);
+
+// let number1 = "500"
+// let number2 = number1.padStart(2,0)
+// console.log(number2);
+
+
+// string padend
+
+// let number1 = "500"
+// let number2 = number1.padEnd(4,0)
+// console.log(number2);
+// console.log(typeof(number2));
+// let number3 = parseFloat(number2)
+// console.log(number3);
+// console.log(typeof(number3));
+
+
+/** string charcodeat() */
+
+// let string46 = "this is most common!"
+// let string47 = string46.charCodeAt(1);
+// console.log(string47);
+
+/* sring split() */
+
+// let string48 = "wow! what a place."
+// console.log(string48);
+// let string49= string48.split("");
+// console.log(string49);
+
+
+/* strig inlude()  ture and false*/
+
+
+//  let string50 = "wow! what a place."
+//  console.log(string50);
+//  let string51 = string50.includes(".")
+//  console.log(string51);
+
+/* JAVASCRIPT STRING METHOD */
+
+// String indexOf()
+// String lastIndexOf()
+// String search()
+// String includes()
+// String startsWith()
+// String endsWith()
+// String match()
+// String matchAll()
+
+/* sting indexof() */
+
+// let string52 = "wow! what a place."
+// console.log(string52);
+// let string53 = string52.indexOf("a", 8)
+// console.log(string53);
+
+/* string serch() */
+
+// let string56 = "why need from validation in web devlopment"
+// console.log(string56);
+// let string57 = string56.search("w")
+// console.log(string57);
+
+
+/* string startwith() */
+
+// let string56 = "why need from validation in web devlopment  "
+// console.log(string56);
+// let strig57 = string56.startsWith("h");
+// console.log(strig57);
+
+/* string endwith()*/
+// let string58 = "why need from validatio in web devlopment  "
+// console.log(string58);
+// let string59 = string58.endsWith(" ");
+// console.log(string59);
+
+
+/******  String match() ******/
+
+/* After Regx */
+
+/******  String matchall()/ remider with array ******/

@@ -1649,7 +1649,7 @@ li:hover{
 }
 
 /* Hover */
-.Sony_Lady_Fitness_Watch-image:hover .hover-open-content {
+.Sony_Lady_Fitness_Watch-image:hover .hover-content {
    display: block;
    transform: translate(30px);
    transform: scale(1.3);
@@ -1698,7 +1698,6 @@ li:hover{
 /* section-8 */
 .main_part_name-3 {
    display: grid;
-   grid-template-columns: auto auto auto;
    padding: 10px;
    margin-bottom: 30px;
 }
@@ -1737,7 +1736,7 @@ li:hover{
    width: 100px;
    background-color: rgb(227, 224, 224);
    border-radius: 8px;
-   margin-right: 20px;
+   margin-right: 10%;
 }
 
 .grid-part-image img:hover {
@@ -1963,84 +1962,104 @@ object-fit: cover;
 }
 
 
-.images-1{
-    height: 250px;
-    width: 250px;
-    position: relative;
-    border-radius: 20px;    
-    overflow: hidden;
-    margin-bottom: 10px;
+.images-1 {
+   height: 250px;
+   width: 250px;
+   position: relative;
+   border-radius: 20px;
+   overflow: hidden;
+   margin-bottom: 10px;
 }
 
-.images-1 img{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
+.images-1 img {
+   height: 250px;
+   width: 250px;
+   object-fit: cover;
 }
 
-.instagram-icon-1{
-    height: 250px;
-    width: 250px;
+.instagram-icon-1 {
+   height: 250px;
+   width: 250px;
 }
 
-.overlay{
-    height: 250px;
-    width: 250px;
-    background-color: black;
-    opacity: 0.5;   
-    position: absolute;
-    top:0;  
-    display: none;
-}
-.instagram-icon-1{
-    display: none;
+.overlay {
+   height: 250px;
+   width: 250px;
+   background-color: black;
+   opacity: 0.5;
+   position: absolute;
+   top: 0;
+   display: none;
 }
 
-.images-1:hover .instagram-icon-1{
-    display: block;
-}
-.images-1:hover .overlay{
-    display: block;
+.instagram-icon-1 {
+   display: none;
 }
 
-.instagram-icon-1 span{
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.images-1:hover .instagram-icon-1 {
+   display: block;
 }
 
-.instagram-icon-1 span a i{   
-    border:1px solid rgb(104, 99, 99);
-    font-size: 20px;
-    color:white;
-    padding: 8px;
-    border-radius: 8px; 
+.images-1:hover .overlay {
+   display: block;
+}
+
+.instagram-icon-1 span {
+   height: inherit;
+   width: inherit;
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.instagram-icon-1 span a i {
+   border: 1px solid rgb(104, 99, 99);
+   font-size: 20px;
+   color: white;
+   padding: 8px;
+   border-radius: 8px;
 }
 
 
-.images-1:hover .instagram-icon-1 span{
-    animation-duration: 0.8s;
-    animation-name: slide;
+.images-1:hover .instagram-icon-1 span {
+   animation-duration: 0.8s;
+   animation-name: slide;
 }
 
 @keyframes slide {
-    from{
-        transform: translateY(15px);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+   from {
+      transform: translateY(15px);
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
 }
-.instagram-icon-1 span a i:hover{
+
+.instagram-icon-1 span a i:hover {
    color: black;
    background-color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer part */
 footer {
@@ -2050,7 +2069,15 @@ footer {
 
 .Newsletter {
    background-color: #0989ff;
-   height: 190px;
+   position: relative;
+   flex-wrap: wrap;
+   width: 100%;
+   object-fit: cover;
+}
+
+.text {
+   display: flex;
+   justify-content: space-between;
 }
 
 .News-text {
@@ -2058,53 +2085,72 @@ footer {
    z-index: 1;
    font-size: 20px;
    color: white;
-   top: 50px;
+   padding: 70px 65px;
+   width: 58%;
 }
 
 .News-text span {
+   font-weight: 700;
    font-size: 15px;
 }
 
-.Newsletter .men-image {
-   position: absolute;
-   z-index: 4;
-   right: 150px;
+.News-text h1 {
+   font-weight: 900;
 }
 
-.plane {
-   position: absolute;
-   z-index: 3;
-   right: 400px;
-}
-
-.submit {
+.submit-button {
    position: relative;
+   width: 42%;
+   padding: 70px 0px;
 }
 
-.submit input {
-   display: flex;
-   position: absolute;
-   padding-right: 100px;
-   padding-left: 20px;
+.submit-button input {
    background-color: white;
    border: 0;
-   border-radius: 8px 0 0 8px;
-   height: 40px;
-   width: 320px;
-   z-index: 5;
-   right: 120px;
+   border-radius: 8px;
+   height: 60px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   padding-right: 20%;
+   padding-left: 26px;
+   z-index: 2;
+   right: 0;
+   outline: none;
 }
 
 button {
    background-color: black;
    border-radius: 0 8px 8px 0;
    color: white;
-   padding: 11px 30px;
+   padding: 22px 40px;
    position: absolute;
    right: 0;
-   top: 0;
-   z-index: 5;
+   z-index: 4;
+   overflow: hidden;
+   top: 67px;
 }
+
+.Newsletter .men-image {
+   position: absolute;
+   z-index: 2;
+   right: 8%;
+   top: -7%;
+}
+
+.plane {
+   position: absolute;
+   z-index: 3;
+   right: 40%;
+}
+
+.flexes {
+   display: flex;
+   justify-content: space-between;
+   width: auto;
+}
+
 
 .Newsdesing-1 {
    mix-blend-mode: luminosity;
@@ -2118,7 +2164,7 @@ footer .Newsdesing-2 {
    mix-blend-mode: luminosity;
    opacity: 0.4;
    position: absolute;
-   left: 200px;
+   left: 17%;
    height: 20px;
 }
 
@@ -2126,8 +2172,12 @@ footer .Newsdesing-2 {
    mix-blend-mode: luminosity;
    opacity: 0.4;
    position: absolute;
-   left: 280px;
+   left: 20%;
+   bottom: 10%;
 }
+
+
+
 
 .all_div {
    display: flex;
