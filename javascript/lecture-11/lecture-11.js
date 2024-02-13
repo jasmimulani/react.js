@@ -173,15 +173,29 @@
 // splice(start, deleteCount, item1, item2)
 // splice(start, deleteCount, item1, item2, /* …, */ itemN)
 
+{
+    // let arry1 =["javascript","c","c+","python","html","css"];
+    // console.log(arry1);
+    // let arry2 = arry1.splice(3,2)
+    // console.log(arry2);
+    // console.log(arry1);
+}
+
 
 // slice method
+// slice()
+// slice(start)
+// slice(start, end)
+ 
 
+{
+    // let arry1 =[45,89,21,1,57,23]
+    // console.log(arry1);
+    // let arry2=arry1.slice(1,5)
+    // console.log(arry2);
+    // console.log(arry1);
 
-// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango","Watermelon"];
-//  const newremove = fruits.slice(0, 4);
-//  document.getElementById("demo").innerHTML = fruits + "<br><br>" + newremove;
-
-//      console.log(fruits);
+}
 
  /*  Array.isArray */
     //  let book = ["math"  , "chemistry"  , "physics" , "bio"];
@@ -216,6 +230,12 @@
 //      console.log(books);
  }
 
+ //number sort
+
+//  let arry1=[9,3,7,10,90,70]
+//  console.log(arry1);
+//  let numbersorted = arry1.sort((a , b) => a - b)
+//  console.log(numbersorted);
 
 
 
@@ -226,15 +246,40 @@
 // let jasminn = jasmi.sort();
 // console.log(jasminn);
 
-
-/*  Number Sort */
- 
+// javascript array map()
 {
-    //  const number1 = [40, 12, 15, 81 ,150 ,200];
-    //  let number = number1.sort()
-    //  console.log(number);
-    //  const number2 = number1.sort(function(a , b){return a - b});
-    //  console.log(number2);
+    // const number1 = [6,8,10,5,2,3];
+    // console.log(number1);
+    // const number2=number1.map(myfunction);
+
+    // const number3 = number2.sort((a,b)=> a-b)
+
+    // console.log(number2);
+
+    // function  myfunction(value) {
+    //     return value*2;
+    // }
+}
+
+ /*  javascript Array flatMap() */
+
+//  let flatMap=[1,2,3,4]
+//  let flatMap1 = flatMap.flatMap((num) => num ===3? [1,1]:2)
+//  console.log(flatMap1);
+
+ /* Javascript Array flat() */
+ {
+    // let flatarray = [10,20,[22,33,[44,55,[66,77]]]]
+    // let flatMap2 = flatarray.flat(1)
+    // console.log(flatMap2);
  }
 
+ /* javascript array filter() */
+ {
+    // let filterarray =["hello","kem-cho","how-are-you","aavjo","khana-khaa-ke-jana"]
+    // let filterarray2 =filterarray.filter((word) => word.length < 9)
+    // console.log(filterarray2);
 
+    // let filterarray3 = filterarray2.sort()
+    // console.log(filterarray3);
+ }
