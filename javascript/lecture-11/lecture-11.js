@@ -283,3 +283,108 @@
     // let filterarray3 = filterarray2.sort()
     // console.log(filterarray3);
  }
+
+ /* javascript array fill  method*/
+
+
+ {
+    // let filtor=[7,5,2,3,6]
+    // console.log(filtor);
+    // let filtor2=filtor.fill("hello",1)
+    // console.log(filtor2);
+ }
+
+ /* javascript array copywithin() method */
+ 
+// copyWithin(target, start)
+// copyWithin(target, start, end)
+
+// const x=["a","b","c","d","e","f"];
+// console.log(x);
+// const newcopy = x.copyWithin(3,5);
+// console.log(newcopy);
+//a,b,c,f,e,f
+
+//target point 3 che atle a,b,c as it is
+// start 5 thi thay che atle a,b,c,d,e,f
+                           //0,1,2,3,4,5
+                           //a,b,c stat 5 par f che atle 
+                           //a,b,c,f pachi abcdef maa
+                           //a=a
+                           //b=b
+                           //c=c
+                           //d=f   e and f baki rey atle 2repit thy
+                           //e=e
+                           //f=f
+                           //=a,b,c,f,e,f
+
+// let j=[1,2,3,4,5,6,7]
+// console.log(j);               //   2,4,5,6,7,7
+// let k= j.copyWithin(2,3)
+// console.log(k);
+
+
+// let j=[1,2,3,4,5,6,7]
+// console.log(j);               
+// let k= j.copyWithin(1,2,3)
+// console.log(k);
+
+// 1,3,3,4,5,6,7
+
+// target point 1 che atle 0 index par 1 che te as it is  
+//starting point 2 che 2 ni  index par 3 che
+//ending point 3 che 1,2,3 maa 3 che last che atle 1,2,3
+// ane last 5,6,7 3 repit that atle 1,3,3,5,6,7
+
+
+/* java scritp valueof() method */
+
+
+// let array =[1,2,3,4,5,4,2,3,9]
+// console.log(array.valueOf());
+
+ /*  JavaScript Multidimensional Array */
+
+//  const data=[[1,2,3],[1,3,4],[4,5,6]];
+//  let data1=data[1][1];
+//  console.log(data1);
+
+ /* Add an Element to a Multidimensional Array */
+
+ {
+    // adding element  outer
+
+    // let stud=[['jack',24],['sara',25]];
+    // stud.push(['jasmi',45])
+    // let data = stud[2][0]
+    // console.log(stud);
+    // console.log(data);
+ }
+
+ // adding element inner
+//  let stud=[['john',1],['sara',2]];
+//  stud[1][2]='hello';
+//  console.log(stud);
+
+//push method in aaray
+
+// let stud=[['jack',3],['sara',7]]
+// stud.splice(0,3,['jasmi',25]);
+// console.log(stud);
+
+// remove outer
+
+// let  stud=[['john',1],['sara',2]];
+// stud.pop()
+// console.log(stud);
+
+// remove inner
+
+// let  stud=[['john',1],['sara',2]];
+// stud[1].pop()
+// console.log(stud);
+
+//splice 
+// let  stud=[['john',1],['sara',2]];
+// stud.splice(0,1)
+// console.log(stud);
