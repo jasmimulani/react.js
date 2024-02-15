@@ -323,13 +323,13 @@
 // let k= j.copyWithin(2,3)
 // console.log(k);
 
-
 // let j=[1,2,3,4,5,6,7]
 // console.log(j);               
-// let k= j.copyWithin(1,2,3)
+// let k= j.copyWithin(2,2,3)
 // console.log(k);
 
-// 1,3,3,4,5,6,7
+//end index number thi thay
+// 1,2,3,4,5,6,7
 
 // target point 1 che atle 0 index par 1 che te as it is  
 //starting point 2 che 2 ni  index par 3 che
