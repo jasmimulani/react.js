@@ -71,16 +71,19 @@ The basic rules of naming a function are similar to naming a variable. It is bet
 // call back function
 
 {
-    greet ("jasmi",callme);
+    // greet ("jasmi",callme);
 
-    // callback function
-     function callme(){
-        console.log('i am frist callback function');
-     }
-     // function
-      function greet(name,callback) {
-        console.log('hi' + '' + name); 
-        callback();  
-      }
+    // // callback function
+    //  function callme(){
+    //     console.log('i am frist callback function');
+    //  }
+    //  // function
+    //   function greet(name,callback) {
+    //     console.log('hi' + '' + name); 
+    //     callback();  
+    //   }
 
     }
+
+
+
