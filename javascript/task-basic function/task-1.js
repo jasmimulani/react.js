@@ -51,6 +51,12 @@
 
 // 7. Write a function to generate a random number.
 
+// function ran(){
+//     let j = Math.random()
+//     console.log(j);
+// }
+// ran();
+
 
 
 
@@ -68,3 +74,23 @@
 //         console.log( day ,"/", hours,"/",minutes);
 //     }
 //        date();
+
+
+// 9. Write a JavaScript function that returns a passed string with letters in
+// alphabetical order.
+
+{
+
+    function order(string){
+
+        return string.split('').sort().join('');
+    }
+    console.log("jasmin", order("jasmin"));
+}
+
+
+// 10. Write a JavaScript conditional statement to find the sign of the product of
+// three numbers. Display an alert box with the specified sign.
+
+
+
