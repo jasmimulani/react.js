@@ -138,4 +138,13 @@ You can complement (invert) the character set by using caret ^ symbol at the sta
 
     // const RegEx2 =/2*5+0*320+06$/
     // console.log(RegEx2.test('25032006'));
+
+
 }
+
+
+{
+    // const Regex = /^mul+ani_ja+smi_(25)+(_03)+_2006$/
+    // console.log(Regex.test('mulani_jasmi_25_03_2006'));
+}
+
