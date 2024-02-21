@@ -7,7 +7,7 @@
 }
 
 .container {
-   max-width: calc(100% - 10%);
+   max-width: calc(100% - 20%);
    margin: auto;
    position: relative;
    height: inherit;
@@ -1047,17 +1047,25 @@
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   margin: 1%;
    margin-bottom: 50px;
 }
 
 .add-1 {
    overflow: hidden;
    position: relative;
-   width: 60%;
+   width:63%;
    height: 250px;
    border-radius: 10px;
 }
 
+.add-2 {
+   overflow: hidden;
+   position: relative;
+   width: 35%;
+   height: 250px;
+   border-radius: 10px;
+}
 
 .add-image-1 {
    position: absolute;
@@ -1072,41 +1080,34 @@
    object-fit: cover;
    object-position: right;
    height: 250px;
-   width: 100%;
-}
-   
-   .add-text-1 {
-      position: absolute;
-      padding: 50px;
-      font-size: 18px;
-      line-height: 1.5;
-   }
-   
-   .add-text-1 h1:hover {
-      color: #0989ff;
-   }
-   .add-1 button {
-      border: none;
-      outline: none;
-      margin-left: 60px;
-      margin-top: 20px;
-   }
+   width: 750px;
 
-.add-2 {
-   overflow: hidden;
-   position: relative;
-   width: 40%;
-   height: 250px;
-   border-radius: 10px;
 }
+
 .add-image-2 img {
    object-fit: cover;
    object-position: right;
    height: 250PX;
-   width: 100%;
+   width: 420px;
 }
 
+.add-text-1 {
+   position: absolute;
+   padding: 50px;
+   font-size: 18px;
+   line-height: 1.5;
+}
 
+.add-text-1 h1:hover {
+   color: #0989ff;
+}
+
+.add-1 button {
+   border: none;
+   outline: none;
+   margin-left: 60px;
+   margin-top: 20px;
+}
 
 /* add 2 */
 .add-image-2 {
@@ -1981,10 +1982,9 @@ li:hover {
    border-bottom: 1px solid rgb(199, 199, 199);
    margin-right: 20px;
 }
-
 .grid-part-1 {
    display: flex;
-   padding: 10%;
+   padding: 7%;
 }
 
 .grid-part-image {
@@ -2236,8 +2236,8 @@ li:hover {
 
 
 .images-1 {
-   height: 250px;
-   width: 250px;
+   height: 230px;
+   width: 230px;
    position: relative;
    border-radius: 20px;
    overflow: hidden;
@@ -2245,19 +2245,19 @@ li:hover {
 }
 
 .images-1 img {
-   height: 250px;
-   width: 250px;
+   height: 230px;
+   width: 230px;
    object-fit: cover;
 }
 
 .instagram-icon-1 {
-   height: 250px;
-   width: 250px;
+   height: 230px;
+   width: 230px;
 }
 
 .overlay {
-   height: 250px;
-   width: 250px;
+   height: 230px;
+   width: 230px;
    background-color: black;
    opacity: 0.5;
    position: absolute;
