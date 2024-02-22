@@ -151,8 +151,163 @@ You can complement (invert) the character set by using caret ^ symbol at the sta
 
 /* ? question mark */
 {
-    let neighbor = /neig?hbou?r/
-    console.log(neighbor.test("neighbor"));
-    // console.log(neighbor.test("heihbor"));
+    // let neighbor = /neig?hbou?r/
+    // console.log(neighbor.test("neighbor"));
+    // console.log(neighbor.test("neihbor"));
 }
+
+// | alternation
+
+{
+    // const Regex = /fg|er/
+    // console.log(Regex.test("fgma"));
+}
+
+// \ backslash
+/*
+Backslash \ is used to escape various characters including all metacharacters. For example,
+
+\$a match if a string contains $ followed by a. Here, $ is not interpreted by a RegEx engine in a special way.
+
+If you are unsure if a character has special meaning or not, you can put \ in front of it. This makes sure the character is not treated in a special way.
+*/
+
+// JavaScript Regular Expression Methods
+
+// you can either use RegExp() or regular expression literal to create a RegEx in JavaScript.
+
+/*
+
+exec()	Executes a search for a match in a string and returns an array of information. It returns null on a mismatch.*/
+
+
+// test()	Tests for a match in a string and returns true or false.
+
+// match()	Returns an array containing all the matches. It returns null on a mismatch.
+
+// matchAll()	Returns an iterator containing all of the matches.
+
+// search()	Tests for a match in a string and returns the index of 
+// the match. It returns -1 if the search fails.
+
+// replace()	Searches for a match in a string and replaces the matched substring with a replacement substring.
+
+// split()	Break a string into an array of substrings.
+
+
+{
+        //   const regex1 =/^a.../;
+        //   const regex2 = ('abbd')
+        //   console.log(regex1.test(regex2));
+          
+}
+
+{
+    // const regex1=/[0-2]{0,1}/;
+    // const regex = regex1.test('989808')
+    // console.log(regex);
+}
+
+// In JavaScript, you can use regular expressions with RegExp() methods: test() and exec().
+
+// There are also some string methods that allow you to pass RegEx as its parameter. They are: match(), replace(), search(), and split().
+
+// regular exprssion.
+
+{
+    // const string = 'find me';
+    // const pattern =/me/;
+    //  // search if the pattern is in string variable
+    // const result1=string.search(pattern);
+    // console.log(result1);
+    // // replace the character with another characte
+    // const string1 ='find me';
+    // const text= string1.replace(pattern,'found you');
+    // console.log(text);
+}
+
+ // splitting strings into array elements
+ {
+
+    //  const regex1= /[\s,]+/;
+    //  const result2 = 'hello world!'.split(regex1);
+    //  const text= 'hello world!'
+    //  const text2 = text.split('')
+    //  console.log(text2);
+    //  console.log(result2);
+ }
+
+     // searching the phone number pattern
+     {
+
+         //  const regex2=/(\d{4})\D(\d{4})\D(\d{2})/g;
+         //  const result3 = regex2.exec('my phone number is: 2222 2222 34');
+         //  console.log(result3);
+     }
+
+    // Regular Expression Flags
+
+// Flags are used with regular expressions that allow various options such as global search, case-insensitive search, etc. They can be used separately or together.
+
+// Regular Expression Modifier  
+
+{
+    // const string ='Hello hello hello';
+//   //  performing a replacement
+//   const result1 = string.replace(/hello/,'world');
+//   console.log(result1);
+
+// performing global replacement
+// const result2 = string.replace(/hello/g,'world');
+// console.log(result2);
+
+//  performing case-insensitive replacement
+// const result3 = string.replace(/hello/i,'world');
+// console.log(result3);
+
+}
+
+
+//task
+{
+
+    // const regex =/...........+@.....*.com$/
+    // console.log(regex.test('jasmimulani@gmail.com'));
+}
+{
+
+    //  const regex1=/(\d{3})\D(\d{3})\D(\d{2})\D(\d{2})/g;
+    //  const result1 = regex1.test('123 456 76 98')
+    //  console.log(result1);
+}
+{
+    //  const regex2=/(\d{2})\D(\d{2})\D(\d{2})\D(\d{2})\D(\d{2})/g;
+    //  const result2 = regex2.test('12 34 56 76 98')
+    //  console.log(result2);
+
+}
+{
+    //   const regex3=/(\d{4})\D(\d{4})\D(\d{2})/g;
+    //  const result3 = regex3.test('1234 5676 98')
+    //  console.log(result3);
+}
+{
+//    const regex4=/(\d{2})-(\d{2})-(\d{2})-(\d{2})-(\d{2})/g;
+//      const result4 = regex4.test('12-34-56-76-98')
+//      console.log(result4); 
+}
+{
+    //   const regex5=/(\d{3})-(\d{3})-(\d{2})-(\d{2})/g;
+    //  const result5 = regex5.test('123-456-76-98')
+    //  console.log(result5);
+}
+{
+    //   const regex6=/(\d{4})-(\d{4})-(\d{2})/g;
+    //  const result6 = regex6.test('1234-5676-98')
+    //  console.log(result6);
+}
+
+
+
+
 
