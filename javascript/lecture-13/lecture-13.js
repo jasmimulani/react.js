@@ -144,7 +144,15 @@ You can complement (invert) the character set by using caret ^ symbol at the sta
 
 
 {
-    // const Regex = /^mul+ani_ja+smi_(25)+(_03)+_2006$/
-    // console.log(Regex.test('mulani_jasmi_25_03_2006'));
+    // const Regex = /^mul+ani_ja*smi_(25)+(-03)*-2006$/
+    // console.log(Regex.test('mulani_jasmi_25-03-2006'));
+}
+
+
+/* ? question mark */
+{
+    let neighbor = /neig?hbou?r/
+    console.log(neighbor.test("neighbor"));
+    // console.log(neighbor.test("heihbor"));
 }
 
