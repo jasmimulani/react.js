@@ -308,6 +308,32 @@ exec()	Executes a search for a match in a string and returns an array of informa
 }
 
 
+// searching the phone number pattern
+// const regex1 = /(\d{3})(\d{3})_(\d{2})_(\d{2})/g;
+// const result2 = regex1.exec('123123_12_12.');
+// console.log(result2);
 
+// const regex2 = /(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/g;
+// const result3 = regex2.exec('1212121212.');
+// console.log(result3);
+
+// const regex3 = /(\d{4})(\d{4})(\d{2})/g;
+// const result4 = regex3.exec('1234123412.');
+// console.log(result4);
+
+// const regex4 = /(\d{2})-(\d{2})-(\d{2})-(\d{2})-(\d{2})/g;
+// const result5 = regex4.exec('12-12-12-12-12.');
+// console.log(result5);
+
+// const regex5 = /(\d{3})-(\d{3})-(\d{2})-(\d{2})/g;
+// const result6 = regex5.exec('123-123-12-12.');
+// console.log(result6);
+
+// const regex6 = /(\d{4})-(\d{4})-(\d{2})/g;
+// const result7 = regex6.exec('1234-1234-12.');
+// console.log(result7);
+
+// const regex = /[a-zA-Z0-9_\-\.]+[@][a-z]+[\.][a-z]{2,3}/g;
+// console.log(regex.test('jasmi@gmail.com'));
 
 
