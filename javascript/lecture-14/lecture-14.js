@@ -234,7 +234,66 @@
     
 
 
+//object   
+
+// {
+//     let list=[
+//         { color: "1", catagories:"red"},
+//         { color: "1", catagories:"red"},
+//         { color: "1", catagories:"red"},
+//         { color: "1", catagories:"red"},
+//         { color: "1", catagories:"red"},
+//         { color: "1", catagories:"red"},
+
+//         { item: "2",  catagories:"dosa"},
+//         { item: "2",  catagories:"panipuri"}, 
+//         { item: "2",  catagories:"khaman"},
+//         { item: "2",  catagories:"sendwich"},
+//         { item: "2",  catagories:"paff"},
+            
+//     ]
+//     let output = promt ("enter item:")
+//     let output1
+// }
 
 
 
+let list = [
+                { name1:"apple",category:"fruits"},
+                { name2:"banana", category:"fruits"},
+                { name3:"cheryy", category:"fruits"},
+                { name4:"strobery", category:"fruits"},
+                { name5:"orange",category:"fruits"},
+            
+                {item1:"panipuri",category:"food"},
+                {item2:"manchausup" , category:"food"},
+                {item3:"pawbhaji",category:"food"},
+                {item4:"sendwich",category:"food"},
+                { item5:"dosa",category:"food" },
+
+                { color1:"red",category:"color"  },                
+                {color2:"blue", category:"color"   },
+                { color3:"yellow",category:"color"},
+                { color:"green", category:"color" },
+                { color5:"black", category:"color"},
+
+                {person1:"jethalal",category:"subtv"},
+                {person2:"dayabhabhi",category:"subtv"},
+                {person3:"babitaji",category:"subtv"},
+                { person4:"champkchacha", category:"subtv"},
+                { person5:"dr.hathi",category:"subtv" },
+
+                {c1:"chotabheem", category:"crtoon" },            
+                {  c2:"raju", category:"crtoon" },
+                {c3:"indumati", category:"crtoon" },
+                {c4:"tuntunmosi", category:"crtoon" },               
+               {c5:"kaliya",category:"crtoon"}
+            ];
+            let output = prompt("Enter value: ");
+            let output1=  list.filter(list => list.category == output);
+        
+            console.log(output1);
+                   
+             
+   
 
