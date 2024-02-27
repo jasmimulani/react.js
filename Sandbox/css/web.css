@@ -1,0 +1,21 @@
+/* h2{
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 3.4rem;
+} */
+
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+     color: var(--bs-dark-color);
+     letter-spacing: 0.07rem;
+     line-height: 1.55rem;
+     font-synthesis: none;
+     text-rendering: optimizeLegibility;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
