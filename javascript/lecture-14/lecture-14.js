@@ -278,22 +278,244 @@
 
 
 
-// object using target method
+// 1. javascript object method
 
- let  list = [
-                { name1:"apple",category:"fruits"},
-                { name2:"banana", category:"fruits"},
-                { name3:"cheryy", category:"fruits"},
-                { name4:"strobery", category:"fruits"},
-                { name5:"orange",category:"fruits"},
-            
-                {item1:"panipuri",category:"food"},
-                {item2:"manchausup" , category:"food"},
-                {item3:"pawbhaji",category:"food"},
-                {item4:"sendwich",category:"food"},
-                { item5:"dosa",category:"food" }
-                
-];
+// object.assign()
 
-   
+// syntax
+{
+    // object.assign(target,.....sources)
+}
 
+{
+    // const obj1 = {num1:"1", mun2:"2"}
+    // const obj2 = {num3:"3", mun4:"4"}
+    // const obj3= {num5:"5", mun6:"6"}
+
+    // const obj4 = Object.assign(obj1 , obj3)
+    // console.log(obj1);
+    // console.log(obj3);
+
+}
+
+// aasign() return value
+
+// Javascript Object.assign() to Clone Objects
+
+{
+    // let obj1 = {num1:"1",num:"2"}
+    // let obj2={num3:"3"};
+    
+    // let object3 = Object.assign(obj1,obj2)
+    
+    // let allobj = obj2  = obj1
+    
+    // console.log(obj1);
+    // console.log(obj2);
+    // console.log(allobj);
+}
+
+//  merege method()
+
+{
+     const obj1 = {num1:"1", mun2:"2"}
+     const obj2 = {num3:"3", mun4:"4"}
+     const obj3 = {num5:"5", mun6:"6"}
+
+     const object4 = Object.assign({},obj1,obj2,obj3)
+
+     const arraay = object4.num1
+
+     console.log(arraay);
+     console.log(object4);
+}
+
+// In the above example, we have used assign() to merge the objects o1, o2, and o3 into a new object o4.
+
+{
+    // const o4 = Object.assign({}, o1, o2, o3);
+  }
+  
+  // Using the empty object {} as a target object ensures that the properties of the other objects are copied to a new object without modifying any of the source objects.
+  
+  // As can be seen from the output, properties of later objects overwrite that of earlier ones. For example,
+  
+  // the b key from o1 is overwritten by its counterpart in o2.
+  // the c keys from o1 and o2 are overwritten by their counterpart in o3.
+  
+  //If the source value is a reference to an object, it only copies the reference value.
+  
+  //  2. Javascript Object.create()
+
+  {
+    // let student={
+    //   name:"jasmi",
+    //   age:18,
+    //   marks :9.97,
+    //   display(){
+    //     console.log("name" , this.name);
+    //   }
+    // };
+
+    //   //create new object
+
+    //   let std1= Object.create(student);
+
+    //   let std2=Object.assign(std1, student)
+
+
+    //   std1.name="khanak";
+
+    //   console.log(std2);
+    //   std1.display();
+    //   console.log(std1);
+    //   console.log(student);
+
+  }
+
+// 3. javascript object.entries()
+{
+    // const obj ={
+    //     name:"kartik",
+    //     age:18,
+    //     location:"himalaya"
+    // };
+    // let obj1 = Object.entries(obj);
+
+    // console.log(obj1[2]);
+
+}
+
+// 4. object is()
+{
+    // let obj1 = {num1:"1",num2:"2"}
+    // let obj2 = {num1:"1",num2:"2"}
+
+    // let obj3 = Object.is(obj1,obj1)
+
+    // console.log(obj3);
+}
+
+// object with same value
+{
+    //  console.log(Object.is("Javascript","Javascript"));
+
+
+    //  console.log(Object.is("Javascript","javascript"));
+
+    //  console.log(Object.is("null","null"));
+
+}
+
+//  is with()
+
+// let obj1={a:1};
+
+// let obj2={a:1};
+
+// console.log(Object.is(obj1,obj2));
+// console.log(Object.is(obj1,obj1));
+
+
+// is with special case
+
+// console.log(object.is([],[]));
+// console.log(object.is({},{}));
+// console.log(object.is(0,-0));
+// console.log(object.is(-0,-0));
+// console.log(object.is(nan,0/0));
+
+
+
+
+//5. object.hasown property()
+
+{
+    //  const obj ={};
+    //  console.log(obj);
+    //  obj.id=42;
+    //  console.log(obj.hasOwnProperty("id"));
+    //  console.log(obj);
+
+}
+
+
+{
+
+    // const obj={id:42,toString:10};
+    // console.log(obj.hasOwnProperty("id"));
+    // console.log(obj.hasOwnProperty("tosrting"));
+}
+
+
+// 6. object.freeze()
+{
+    // const obj={num:"1",num2:"2"}
+
+    // obj.num="10"
+    // obj.num2="20"
+    // Object.freeze(obj)
+    // console.log(obj);
+}
+
+
+// 7. getOwnPropertynames()
+{
+    // const obj = {
+    //     name:'jasmi',
+    //     age:18,
+    //     address:'surat',
+    // };
+
+    //   const propertynames=Object.getOwnPropertyNames(obj);
+    // console.log(propertynames);
+}
+
+
+//8 object.setprototypeof()
+{
+    // const obj ={};
+    // const parent={foo:'bar'};
+
+    // Object.setPrototypeOf(obj,parent);
+    
+    // console.log(obj.foo);
+    // console.log(obj);
+}
+
+// 9. object.tostring()
+{
+    // let num = {10:"obj"};
+    // console.log(typeof num);
+    // console.log(typeof num.toString());
+}
+
+{
+    // // keys are arranged randomly 
+    // const obj={100:"a",22:"b",71:"c"} 
+
+    // console.log(Object.entries(obj));
+}
+
+// javascript object.values() with string
+{
+
+    // const string="code";
+    // console.log(Object.values(string));
+}
+
+
+//10. object.value of()
+{
+
+    // let num=new Number(12);
+
+    // console.log(num);
+    // console.log(num.valueOf);
+}
+
+//11. object values()
+{
+    // const obj = { 65:"a",100:"b",20:"c"};
+    // console.log(Object.values(obj));
+}
