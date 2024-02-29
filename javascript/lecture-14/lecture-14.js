@@ -318,16 +318,16 @@
 //  merege method()
 
 {
-     const obj1 = {num1:"1", mun2:"2"}
-     const obj2 = {num3:"3", mun4:"4"}
-     const obj3 = {num5:"5", mun6:"6"}
+    //  const obj1 = {num1:"1", mun2:"2"}
+    //  const obj2 = {num3:"3", mun4:"4"}
+    //  const obj3 = {num5:"5", mun6:"6"}
 
-     const object4 = Object.assign({},obj1,obj2,obj3)
+    //  const object4 = Object.assign({},obj1,obj2,obj3)
 
-     const arraay = object4.num1
+    //  const arraay = object4.num1
 
-     console.log(arraay);
-     console.log(object4);
+    //  console.log(arraay);
+    //  console.log(object4);
 }
 
 // In the above example, we have used assign() to merge the objects o1, o2, and o3 into a new object o4.
@@ -519,3 +519,123 @@
     // const obj = { 65:"a",100:"b",20:"c"};
     // console.log(Object.values(obj));
 }
+
+ //  asyncronous method
+
+//  setTimeout method
+
+// settimeout( function,delay,parameter1,parameter2..........)
+
+/* set timeout(
+    function(){
+
+    },delaytime
+)
+ */
+
+// function print(){
+//     console.log(
+//         "hello javascript"
+//     );
+// }
+//  setTimeout(print , 5000);
+
+// --------------------------------------------
+
+// let print = () =>
+// {
+//     console.log("settimeout method");
+// }
+
+// setTimeout(print , 5000)
+
+// ----------------------------------------------------
+
+// setTimeout(
+//     function greet(){
+//         console.log("hello java");
+//     }, 5000
+// )
+// setTimeout(print , 5000)
+// -----------------------
+
+// setTimeout(
+//     () => console.log("hello java"), 5000
+// )
+// -----------------------------------------------------
+
+// function greet(name , age){
+//     console.log(`your name is ${name} and age ${age}`);
+// }
+// setTimeout(greet , 1000 , "jasmi" , 18)
+
+
+// ----------------------------------------------------------
+
+
+/*  setinterval */
+
+// setinterval(function , delay , parameter1 , perameter2.......)
+
+// setInterval(
+//     function  greet() {
+//         console.log("1"); 
+//     }, 2000
+// )
+
+// ------------------------------------
+
+// setInterval(
+
+//     () => console.log("hello"), 3000
+// )
+
+// ----------------------------------------
+
+// function greet(name , age){
+//         console.log(`your name is ${name} and age ${age}`);
+//     }
+
+//     setInterval(greet , 1000 , "jasmi", 18)
+
+// --------------------------------------
+/* set interval id */
+
+//  function greet(name , age){
+//             console.log(`your name is ${name} and age ${age}`);
+//         }
+//    let id = setInterval(greet , 1000 , "jasmi" , 18)
+//    console.log("this is id", id);
+//    clearInterval(id)
+
+// --------------------------------------------------------------------------------------------------
+/*task */
+
+// setInterval(time, 3000);
+
+// function time() {
+//   const date = new Date();
+//   console.log( date.toLocaleTimeString());
+// }
+
+// or========================================================
+
+
+// const date = setInterval(Time, 3000);
+
+// function Time() {
+//   const date = new Date();
+//   console.log(date.toLocaleTimeString());
+// }
+
+// function myStopFunction() {
+//   clearInterval(date);
+// }
+
+
+
+
+
+
+
+
