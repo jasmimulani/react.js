@@ -608,31 +608,13 @@
 //    console.log("this is id", id);
 //    clearInterval(id)
 
-// --------------------------------------------------------------------------------------------------
 /*task */
-
+    
 // setInterval(time, 3000);
-
-// function time() {
+//  function time() {
 //   const date = new Date();
 //   console.log( date.toLocaleTimeString());
 // }
-
-// or========================================================
-
-
-// const date = setInterval(Time, 3000);
-
-// function Time() {
-//   const date = new Date();
-//   console.log(date.toLocaleTimeString());
-// }
-
-// function myStopFunction() {
-//   clearInterval(date);
-// }
-
-
 
 
 
