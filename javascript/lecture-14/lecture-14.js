@@ -691,60 +691,66 @@
 //         console.log("this code is executed:");
 //     }
 // );
+// -------------------------------------------------------------------------------
+{
+let conutvalue = new Promise(function(resolve ,reject){
+    resolve();
+});
 
-let promise = new promise(function(resolve, reject){
+conutvalue.finally(
+    function greet(){
+        console.log('this code is executed.')
+    }
+);
+
+let promise = new Promise(function(resolve , reject){
     setTimeout(
         function(){
-            console.log('hello promises');
-            resolve();
-        }, 5000
+            console.log('Hello Promises')
+            // reject('this task is not complete!')
+            resolve()
+        },5000
     )
 })
 promise.then(function(){
     setTimeout(
         function(){
-            console.log('first then function');
+            console.log('Frist then function')
         },1000
     )
-}) 
+})
 .then(function(){
     setTimeout(
         function(){
-            console.log('second then function');
+            console.log('second then function')
         },5000
     )
-}) 
+})
 .then(function(){
     setTimeout(
         function(){
-            console.log('third then function');
+            console.log('Third then function')
         },4000
     )
-}) 
+})
 .then(function(){
     setTimeout(
         function(){
-            console.log('fourth then function');
+            console.log('Fourth then function')
         },5000
     )
-}) 
+})
 .then(function(){
     setTimeout(
         function(){
-            console.log('fifth then function');
-        },5000
+            console.log('Fifth then function')
+        },1000
     )
-    })
-
-    .catch(function(result){
-        console.log(result);
-    })
-    .finally(function(){
-        console.log('the asyncronouns task complet!.');
-    })
-
-
-
-
-
-
+})
+.catch(function(reslut){
+    console.log(reslut)
+})
+.finally(function(){
+    console.log('the Asyncronous task complete!...')
+})
+}
