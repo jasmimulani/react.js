@@ -79,14 +79,14 @@
 // 9. Write a JavaScript function that returns a passed string with letters in
 // alphabetical order.
 
-{
+// {
 
-    function order(string){
+//     function order(string){
 
-        return string.split('').sort().join('');
-    }
-    console.log("jasmin", order("jasmin"));
-}
+//         return string.split('').sort().join('');
+//     }
+//     console.log("jasmin", order("jasmin"));
+// }
 
 
 // 10. Write a JavaScript conditional statement to find the sign of the product of

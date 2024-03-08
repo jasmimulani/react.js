@@ -179,7 +179,7 @@
 /** string charcodeat() */
 
 // let string46 = "this is most common!"
-// let string47 = string46.charCodeAt(1);
+// let string47 = string46.charCodeAt(3);
 // console.log(string47);
 
 /* sring split() */
@@ -243,3 +243,85 @@
 /* After Regx */
 
 /******  String matchall()/ remider with array ******/
+
+// ------------------------------------------------------
+// prectice
+
+// length()
+
+// let string1 = "hello,java"
+// console.log(string1.length);
+// ----------------------------------------------------
+
+// chartat()
+
+// let string2 = "hello javascript";
+// let string3 = string2.charAt(1)
+// console.log(string3);
+
+// ------------------------------------------------
+
+//   slice()
+
+// let string4 = "hello javascript";
+// let string5= string4.slice(2,2);
+// console.log(string5);
+
+// -----------------------------
+
+// substring()
+
+// let string6="javascript"
+// let string7=string6.substring(3,-6)
+// console.log(string7);
+
+// ----------------------------------------
+ 
+// replace
+
+// let string8 ="java script"
+// let string9 = string8.replace("script","point")
+// console.log(string9);
+
+// ----------------------------------
+
+// replaceall
+
+// let string10 = "java script"
+// let string11 = string10.replaceAll(/script/g, "point")
+// console.log(string11);
+
+// -------------------------------------
+
+// touppercase
+
+// let string12 = "java script"
+// let string13 = string12.toLocaleUpperCase();
+// console.log(string13);
+
+// -----------------------------------
+
+// tolower
+
+// let string14 = "JAVA SCRIPT"
+// let string15 = string14.toLocaleLowerCase()
+// console.log(string15);
+
+// ------------------------------------
+
+// concat
+
+// let string16 = "java"
+// let strig17 = "script"
+// let string18 ="is best"
+// let string19 = string16.concat(" " + strig17 + " " + string18)
+// console.log(string19);
+
+// ----------------------------------
+
+// trim
+
+// let strig20 =" java script "
+// let string21 = strig20.trim();
+// console.log(string21);
+// console.log(string21.length);

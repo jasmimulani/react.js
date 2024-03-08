@@ -143,7 +143,7 @@ The syntax for Math any methods is : Math.method(number)
 
 //Math.log(x) returns the natural logarithm of x.
 //The natural logarithm returns the time needed to reach a certain level of growth.
-//Example:-
+// //Example:-
 
 // let math16 = Math.log2(15.27)
 // console.log(math16);
@@ -211,4 +211,12 @@ The syntax for Math any methods is : Math.method(number)
 //    a += 1;
 //  }
 // console.log(a);
+
+// -------------------------------------------------------------------------------
+// prectice
+
+//  Math.E
+
+ let math1 = Math.E
+ console.log(math1);
 
