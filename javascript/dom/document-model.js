@@ -11,14 +11,18 @@
 
 // the dom represent an html documnets as a hierarchy of nodes. consider the following html documnet:
 
-{/* <Html>
+{
+    
+    /* <Html>
     <head>
         <title> javascript dom</title>
     </head>
     <body>
         <p> hello dom!</p>
     </body>
-</Html> */}
+</Html> */
+
+}
 
 // in this dom TreeWalker, the documnet is the root node. the root node has one child node which is the <html> element. the<html> element is called the documnet element.
 
@@ -135,7 +139,7 @@
     //     elemenet.removeAttribute("id")
     // }
     // function addattr(){
-    //     console.log(elemenet.getAttribute("class"))
+    //     console.log(elemenet.setAttribute("class","jasmi"))
     // }
 }
 
