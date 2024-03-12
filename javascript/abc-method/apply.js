@@ -28,13 +28,13 @@
 // ============================================
 // function borrowing method
 
-const item= {
-    name:'audi',
-    discription(){
-        return `${this.name} is of ${this.color} color.`   
-    }
-}
-// / const bike ={
+// const item= {
+//     name:'audi',
+//     discription(){
+//         return `${this.name} is of ${this.color} color.`   
+//     }
+// }
+//  const bike ={
     //   name:'BUGATI',
     //   color:'black'
     // }
@@ -58,13 +58,13 @@ const item= {
     
     // Array Merge 
     
-    // let Array1 = ['dataObj' , 'dataArr' , 'object' , 'string']
+    // let Array1 = ['dataObj','dataArr','object','string']
     
     // let Array2  = [10 , 20 , 30 , 40 , 50 , 60]
     
-    // let NewArry = Array1.concat(Array2)
+    // let NewArry1 = Array1.concat(Array2)
     
-    // console.log(NewArry);
+    // console.log(NewArry1);
     
     // let NewArry = Array1.push.apply(Array1 , Array2)
     

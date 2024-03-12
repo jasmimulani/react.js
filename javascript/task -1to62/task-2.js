@@ -60,12 +60,14 @@
 // =============================================
 
 // 16. Reverse String in JavaScript
-//  function String (str){
-//     var String1 = str.split("")
-//     var String2 = String1.reverse();
-//     var strig3 = String2.join("");
-//     return strig3
-//  }
-//  String("hello");
+{
+    function stt(str){
+       let String1 = str.split(" ")
+       let String2 = String1.reverse();
+       let strig3 = String2.join(" ");
+       return strig3;
+    }
+    stt("hello");
+}
 
 

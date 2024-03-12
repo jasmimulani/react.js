@@ -5,7 +5,6 @@
 // let max = this;
 // console.log(max);
 //   // windows()
- 
 // this.name = "skill qode"
 // console.log(this.name);
 
@@ -37,7 +36,7 @@
    // newfunc()
 
      // // windows
-// -----------------
+// ----------------------------------
 //  const obj = () =>{
 //    this.name='jquery'
 //    console.log(name);
