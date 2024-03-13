@@ -20,7 +20,14 @@
 // alert(Message)
 // =======================================================
 // 4. mouseover and mouseout in javascript
+// ======================================================
 // 5. Use keypress In JavaScript to Display Alerts
+{
+    function j(){
+        alert("submit value")
+    }
+}
+// ==================================================
 // 6. JavaScript Validation Examples
 // 7. Textbox required validation in javascript
 // 8. Email validation in JavaScript
@@ -60,14 +67,82 @@
 // =============================================
 
 // 16. Reverse String in JavaScript
+// {
+//     function jasmi(str){
+//        let string1 = str.split("")
+//        let string2 = string1.reverse();
+//        let strig3 = string2.join("");
+//        console.log(strig3);
+//     }
+//     jasmi("hello");
+// }
+
+
+// 17. JavaScript Open a page using window.open() method
+
+
+// 18. if else statement in JavaScript
+
+// {
+//     let age=3;
+//     if(age >=18){
+
+//         console.log("you are aligible");
+//     }else{
+//         console.log("not aligible");
+//     }
+//     }
+// =========================================
+// 19. Insert element in array javascript
 {
-    function stt(str){
-       let String1 = str.split(" ")
-       let String2 = String1.reverse();
-       let strig3 = String2.join(" ");
-       return strig3;
+    //push method
+    //   let array = ['1','2','3','4','5']
+    //   array.push("6")
+    //   console.log(array)
     }
-    stt("hello");
+    {
+     //apply method
+        // let a =['j','k']
+        // let b =['l','m']
+        // a.push.apply(a,b)
+        // console.log(a);
+    }
+    {
+        //unshift
+        // let array = ['11','12','13','14','15']
+        // array.unshift("1")
+        // console.log(array)
+    }
+    
+// 20. get current url javascript
+// 21. getElementsByClassName() method in JavaScript
+{
+    // const elemenet =document.getElementsByClassName('className')
 }
 
+// 22. getElementByTagName() method in JavaScript
+{
+    // const elemenet =document.getElementsByTagName('h1')
+    // function addText(){
+    //  for(let i=0; i< elemenet.length; i++)
+    //  {
+    //      // elemenet[i].innerHTML = "hello world"
+    //      elemenet[i].style.color = "black"
+    //      elemenet[i].style.background = "crimson"
+    //  }
+    // }
+    // addText();
+}
+
+// 23. Disable Browser back and forward button in browser using
+// JavaScript
+// 24. Disable back button in browser using javascript
+// 25. Disable Forward button in browser using JavaScript:
+// 26. Disable Forward button in browser using JavaScript:
+// 27. Disable Dropdown list using JavaScript
+// 28. Enable Dropdown list using JavaScript
+// 29. Disable mouse right click using javascript
+// 30. JavaScript Date Countdown Timer
+// 31. Checkbox validation using JavaScript (javascript checkbox
+// checked)
 
