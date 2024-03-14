@@ -23,9 +23,9 @@
 // ======================================================
 // 5. Use keypress In JavaScript to Display Alerts
 {
-    function j(){
-        alert("submit value")
-    }
+    // function j(){
+    //     alert("submit value")
+    // }
 }
 // ==================================================
 // 6. JavaScript Validation Examples
