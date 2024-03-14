@@ -20,6 +20,14 @@
 // alert(Message)
 // =======================================================
 // 4. mouseover and mouseout in javascript
+{
+    function mouseover(text){
+        text.style.color ="crimson";
+    }
+    function mouseout(text){
+        text.style.color = "black";
+    }
+}
 // ======================================================
 // 5. Use keypress In JavaScript to Display Alerts
 {
@@ -79,6 +87,9 @@
 
 
 // 17. JavaScript Open a page using window.open() method
+function opennnewwindow(){
+    window.open("http://127.0.0.1:5500/task%20-1to62/task-2.html")
+}
 
 
 // 18. if else statement in JavaScript
