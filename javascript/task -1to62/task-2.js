@@ -20,14 +20,14 @@
 // alert(Message)
 // =======================================================
 // 4. mouseover and mouseout in javascript
-{
-    function mouseover(text){
-        text.style.color ="crimson";
-    }
-    function mouseout(text){
-        text.style.color = "black";
-    }
-}
+// {
+//     function mouseover(text){
+//         text.style.color ="crimson";
+//     }
+//     function mouseout(text){
+//         text.style.color = "black";
+//     }
+// }
 // ======================================================
 // 5. Use keypress In JavaScript to Display Alerts
 {
@@ -87,9 +87,9 @@
 
 
 // 17. JavaScript Open a page using window.open() method
-function opennnewwindow(){
-    window.open("http://127.0.0.1:5500/task%20-1to62/task-2.html")
-}
+// function opennnewwindow(){
+//     window.open("http://127.0.0.1:5500/task%20-1to62/task-2.html")
+// }
 
 
 // 18. if else statement in JavaScript
@@ -126,6 +126,9 @@ function opennnewwindow(){
     }
     
 // 20. get current url javascript
+{
+    // document.getElementById('demo').innerHTML="current url this page:"+window.location.href
+}
 // 21. getElementsByClassName() method in JavaScript
 {
     // const elemenet =document.getElementsByClassName('className')
@@ -156,4 +159,51 @@ function opennnewwindow(){
 // 30. JavaScript Date Countdown Timer
 // 31. Checkbox validation using JavaScript (javascript checkbox
 // checked)
+// 32. get query string value in javascript
+// 33. JavaScript get or set radio button value
+// 34. Get radio button selected value using JavaScript
+// 35. Set radio button value using JavaScript
+// 36. JavaScript screen height
+// 37. auto refresh page javascript
+// 38. Convert Celsius Value to Farenheit Value in JavaScript
+{
+    // function Celsius(j)
+    // {
+    //     console.log((j * 9/5) + 32);
+    // }
+    // Celsius(70)
+}
+// 39. javascript get today’s date
+{
+    // const data = new Date()
+    // console.log(data);
+}
+// 40. Scroll Down Event in JavaScript
+// 41. JavaScript Animation example
+// 42. Play and Pause video in JavaScript
+// 43. Change background colour of div javascript
+// 44. Change the page colour in Every 5 sec in JavaScript
+// 45. Display Message every 3 second using Javascript
+// 46. JavaScript get max value in array of objects
+// 47. Sort and Reverse an array of Objects using JavaScript
+// 48. Find index of Largest value in An Array in JavaScript
+{
+    var j = Math.max(11,20,55,102,120)
+    console.log(j);
+    
+}
+// 49. Try and Catch in JavaScript
+// 50. Return Boolean value of an Integer In JavaScript
+// 51. JavaScript Check an object is an array or not
+// 52. Display Table Number in JavaScript
+// 53. Reload page JavaScript
+// 54. Break and Continue in JavaScript
+// 55. JavaScript Conditional Operator
+// 56. Example of this KeyWord in JavaScript
+// 57. JavaScript Validation API
+// 58. JavaScript Set dropdown value on Button Click
+// 59. Display Images Based on User Selection
+// 60. JavaScript Bind Arrays Value into Dropdown list
+// 61. javascript browser detection
+// 62. How to sort array value using sort() method in JavaScript
 
