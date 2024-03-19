@@ -85,13 +85,13 @@
 //     jasmi("hello");
 // }
 
-
+// -------------------------------------------------------------
 // 17. JavaScript Open a page using window.open() method
 // function opennnewwindow(){
 //     window.open("http://127.0.0.1:5500/task%20-1to62/task-2.html")
 // }
 
-
+// ---------------------------------------------------------------
 // 18. if else statement in JavaScript
 
 // {
@@ -129,11 +129,12 @@
 {
     // document.getElementById('demo').innerHTML="current url this page:"+window.location.href
 }
+// -----------------------------------------------------
 // 21. getElementsByClassName() method in JavaScript
 {
     // const elemenet =document.getElementsByClassName('className')
 }
-
+// ------------------------------------------------------
 // 22. getElementByTagName() method in JavaScript
 {
     // const elemenet =document.getElementsByTagName('h1')
@@ -147,7 +148,7 @@
     // }
     // addText();
 }
-
+// -----------------------------------------------------
 // 23. Disable Browser back and forward button in browser using
 // JavaScript
 // 24. Disable back button in browser using javascript
@@ -165,6 +166,7 @@
 // 35. Set radio button value using JavaScript
 // 36. JavaScript screen height
 // 37. auto refresh page javascript
+
 // 38. Convert Celsius Value to Farenheit Value in JavaScript
 {
     // function Celsius(j)
@@ -173,17 +175,61 @@
     // }
     // Celsius(70)
 }
+// -------------------------------------------
 // 39. javascript get today’s date
 {
     // const data = new Date()
     // console.log(data);
 }
+// -------------------------------------------
 // 40. Scroll Down Event in JavaScript
+{
+    //  visit to html page/document
+}
+// -------------------------------------
 // 41. JavaScript Animation example
 // 42. Play and Pause video in JavaScript
 // 43. Change background colour of div javascript
+
+/* 43 maa html ane style pn che  */
+
+    // var body = document.getElementById("body")
+    // var button = document.getElementById("button"); 
+
+    // button.onclick = function(){
+    //     if(body.className =="black"){
+    //         body.className = "white";
+    //         button.className = "black";
+    //     }else{
+    //         body.className = "black";
+    //         button.className = "white";
+    //     }
+    // };
+
 // 44. Change the page colour in Every 5 sec in JavaScript
+/* html ma pn style */
+{
+    var i=0;
+    var j=0;
+    function divcolor(){
+        var divtag=document.getElementById("div1");
+        var bgcolor=["yellow","purple","blue","brown"];
+        var txtcolor=["red","white","gray","black"];
+        divtag.style.backgroundColor=bgcolor[i];
+        divtag.style.color=txtcolor[j];
+        i=(i+1)%bgcolor.length;
+        j=(j+1)%txtcolor.length;
+    }
+    setInterval(divcolor,5000);
+}
 // 45. Display Message every 3 second using Javascript
+{
+    // setInterval(
+    //         function  greet() {
+    //             console.log("hello"); 
+    //         }, 3000
+    //     )
+}
 // 46. JavaScript get max value in array of objects
 // 47. Sort and Reverse an array of Objects using JavaScript
 // 48. Find index of Largest value in An Array in JavaScript
@@ -192,8 +238,26 @@
     // console.log(j);
     
 }
+// ------------------------------------------
 // 49. Try and Catch in JavaScript
+{
+    // try{
+    //     eval("alert('hello)")
+    // }
+    // catch(err){
+    //     document.getElementById("try").innerHTML=err.name
+    // }
+}
+// -----------------------------------------------------------
 // 50. Return Boolean value of an Integer In JavaScript
+{
+    // let Boolean =0
+    // function value(){
+    //     let i = Boolean ? true :false
+    //     document.getElementById('result').innerHTML=i
+    // }
+    // value()
+}
 // 51. JavaScript Check an object is an array or not
 // 52. Display Table Number in JavaScript
 // 53. Reload page JavaScript
@@ -205,5 +269,12 @@
 // 59. Display Images Based on User Selection
 // 60. JavaScript Bind Arrays Value into Dropdown list
 // 61. javascript browser detection
+// ------------------------------------------------
 // 62. How to sort array value using sort() method in JavaScript
+{
+    // let arr1=[15,2,45,78,90,99]
+    // console.log(arr1)
+    // let short = arr1.sort((a,b)=>a-b)
+    // console.log(short);
+}
 

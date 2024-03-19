@@ -24,3 +24,6 @@ let obj=
 console.log(obj);
 
 
+fetch('http://localhost:3000/posts')
+.then(response => response.json())
+.then(json =>console.log(json));
