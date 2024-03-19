@@ -11,6 +11,8 @@
 //     function greet(){
 //         document.getElementById("head").style.color ="orange"
 //     }
+
+// ---------------------------------------------------
 /* close and open window */
     {
 
@@ -23,3 +25,6 @@
         //      window.close();
         // }
    }
+
+//    --------------------------------------------
+ /* on load  */

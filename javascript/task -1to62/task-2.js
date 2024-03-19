@@ -188,8 +188,8 @@
 // 47. Sort and Reverse an array of Objects using JavaScript
 // 48. Find index of Largest value in An Array in JavaScript
 {
-    var j = Math.max(11,20,55,102,120)
-    console.log(j);
+    // var j = Math.max(11,20,55,102,120)
+    // console.log(j);
     
 }
 // 49. Try and Catch in JavaScript
