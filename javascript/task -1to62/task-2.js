@@ -209,18 +209,18 @@
 // 44. Change the page colour in Every 5 sec in JavaScript
 /* html ma pn style */
 {
-    var i=0;
-    var j=0;
-    function divcolor(){
-        var divtag=document.getElementById("div1");
-        var bgcolor=["yellow","purple","blue","brown"];
-        var txtcolor=["red","white","gray","black"];
-        divtag.style.backgroundColor=bgcolor[i];
-        divtag.style.color=txtcolor[j];
-        i=(i+1)%bgcolor.length;
-        j=(j+1)%txtcolor.length;
-    }
-    setInterval(divcolor,5000);
+    // var i=0;
+    // var j=0;
+    // function divcolor(){
+    //     var divtag=document.getElementById("div1");
+    //     var bgcolor=["yellow","purple","blue","brown"];
+    //     var txtcolor=["red","white","gray","black"];
+    //     divtag.style.backgroundColor=bgcolor[i];
+    //     divtag.style.color=txtcolor[j];
+    //     i=(i+1)%bgcolor.length;
+    //     j=(j+1)%txtcolor.length;
+    // }
+    // setInterval(divcolor,5000);
 }
 // 45. Display Message every 3 second using Javascript
 {

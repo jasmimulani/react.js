@@ -11,7 +11,7 @@
 
 // program with a promise
 {
-    // const count =true;
+    // const count = true;
 
     // let countvlue = new Promise(function(resolve  , reject)
     // {
@@ -27,7 +27,7 @@
 // javascript promise chaining
 
 {
-    // let countvalue = new promise (function(resolve , reject){
+    // let countvalue = new Promise(function(resolve , reject){
     //     resolve("promise is not resolved");
     // });
 
@@ -74,65 +74,65 @@
 //     }
 // );
 // -------------------------------------------------------------------------------
-{
-let conutvalue = new Promise(function(resolve ,reject){
-    resolve();
-});
+// {
+// let conutvalue = new Promise(function(resolve ,reject){
+//     resolve();
+// });
 
-conutvalue.finally(
-    function greet(){
-        console.log('this code is executed.')
-    }
-);
+// conutvalue.finally(
+//     function greet(){
+//         console.log('this code is executed.')
+//     }
+// );
 
-let promise = new Promise(function(resolve , reject){
-    setTimeout(
-        function(){
-            console.log('Hello Promises')
-            // reject('this task is not complete!')
-            resolve()
-        },5000
-    )
-})
-promise.then(function(){
-    setTimeout(
-        function(){
-            console.log('Frist then function')
-        },1000
-    )
-})
-.then(function(){
-    setTimeout(
-        function(){
-            console.log('second then function')
-        },5000
-    )
-})
-.then(function(){
-    setTimeout(
-        function(){
-            console.log('Third then function')
-        },4000
-    )
-})
-.then(function(){
-    setTimeout(
-        function(){
-            console.log('Fourth then function')
-        },5000
-    )
-})
-.then(function(){
-    setTimeout(
-        function(){
-            console.log('Fifth then function')
-        },1000
-    )
-})
-.catch(function(reslut){
-    console.log(reslut)
-})
-.finally(function(){
-    console.log('the Asyncronous task complete!...')
-})
-}
+// let promise = new Promise(function(resolve , reject){
+//     setTimeout(
+//         function(){
+//             console.log('Hello Promises')
+//             // reject('this task is not complete!')
+//             resolve()
+//         },5000
+//     )
+// })
+// promise.then(function(){
+//     setTimeout(
+//         function(){
+//             console.log('Frist then function')
+//         },1000
+//     )
+// })
+// .then(function(){
+//     setTimeout(
+//         function(){
+//             console.log('second then function')
+//         },5000
+//     )
+// })
+// .then(function(){
+//     setTimeout(
+//         function(){
+//             console.log('Third then function')
+//         },4000
+//     )
+// })
+// .then(function(){
+//     setTimeout(
+//         function(){
+//             console.log('Fourth then function')
+//         },5000
+//     )
+// })
+// .then(function(){
+//     setTimeout(
+//         function(){
+//             console.log('Fifth then function')
+//         },1000
+//     )
+// })
+// .catch(function(reslut){
+//     console.log(reslut)
+// })
+// .finally(function(){
+//     console.log('the Asyncronous task complete!...')
+// })
+// }
