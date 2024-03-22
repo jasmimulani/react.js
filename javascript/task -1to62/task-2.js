@@ -149,8 +149,7 @@
     // addText();
 }
 // -----------------------------------------------------
-// 23. Disable Browser back and forward button in browser using
-// JavaScript
+// 23. Disable Browser back and forward button in browser using JavaScript
 // 24. Disable back button in browser using javascript
 // 25. Disable Forward button in browser using JavaScript:
 // 26. Disable Forward button in browser using JavaScript:
@@ -158,8 +157,7 @@
 // 28. Enable Dropdown list using JavaScript
 // 29. Disable mouse right click using javascript
 // 30. JavaScript Date Countdown Timer
-// 31. Checkbox validation using JavaScript (javascript checkbox
-// checked)
+// 31. Checkbox validation using JavaScript (javascript checkbox checked)
 // 32. get query string value in javascript
 // 33. JavaScript get or set radio button value
 // 34. Get radio button selected value using JavaScript
