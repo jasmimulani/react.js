@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Stop Watch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-color:crimson;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            padding: 1rem;
+            max-width: 300px;
+            text-align: center;
+            position: relative;
+            border-radius: 10px;
+            border-color: black;
+        }
+        .time{
+            padding: 1rem 0;
+            font-size: 2rem;
+        }
+        h1 ,p{
+            color: white;
+        }
+        button{
+            padding: 0.4rem 1rem;
+            margin: 0 0.2rem;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+
+      <div class="container">
+        <h1> Stop Watch</h1>
+        <p class="time">
+            <span id="minutes">00</span>:<span id="second">00</span>:<span id="tens">00</span>
+        </p>
+        <button id="sratr">start</button>
+        <button id="stop">stop</button>
+        <button id="reset">reset</button>
+      </div>
+    <script src="./time.js"></script>
+</body>
+</html>
