@@ -2,25 +2,27 @@ import React from 'react'
 import { Product } from '../../projusct'
 import { useState } from 'react'
 
-const Card = () => {
+  const Card = () => {
+    const [index, setIndex] = useState(0)
+    const firstIndex = 0
+    const lastIndex = Product.length - 1
 
+    const Next = () => {
+        if (index < lastIndex) {
+            setIndex(index + 1)
+        } else {
+            setIndex(firstIndex)
+        }
+    }
 
- const[index , setindex]=useState(0) 
-
-  // let index = 0
-  function Next() {
-    // index = index + 1
-    // console.log(index);
-    setindex(index + 1)
-  }
-
-
-  function Prev() {
-    // index = index - 1
-    // console.log(index);
-    setindex (index - 1)
-  }
-
+    const Prev = () => {
+        if (index > firstIndex) {
+            setIndex(index - 1)
+        } else {
+            setIndex(lastIndex)
+        }
+    }
+  
   let productData = Product[index]
   return (
     <div>
