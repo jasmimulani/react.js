@@ -26,5 +26,4 @@ const Use_Effect_API = () => {
     </div>
   )
 }
-
 export default Use_Effect_API
