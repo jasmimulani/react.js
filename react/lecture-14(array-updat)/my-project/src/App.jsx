@@ -1,27 +1,44 @@
 import React from 'react'
 import { useState } from 'react'
+import TodoList from './Components/TodoList'
+import Task from './Components/Task'
+import Update_array from './Components/Update_array'
 
 const App = () => {
 
-    const[name , setname] =useState(" ")
-    const[profile , setprofile]= useState(["jasmi"])
-    console.log(name);
-    console.log(profile);
+  const [ListTodo, setListTodo] = useState([])
+  const [edting , setediting] = useState(false)
 
-    let  Ids = 0
+  let addList = (inputText) => {
+    if(inputText!=='')
+    setListTodo([...ListTodo, inputText])
+  }
+
+  const  deleteListItem =(key)=>{
+    let newListTodo = [...ListTodo]
+    newListTodo.splice(key,1)
+    setListTodo([...newListTodo])
+  }
+  
+  const EditListItem =(index)=>{
+   
+  }
+
+
   return (
+    <>
+    {/* <Update_array/> */}
     <div>
-        <input className='p-2 border-2 border-solid border-black' value={name} onChange={(e) => setname (e.target.value)}/>
-        <button  className='btn' onClick={() => setprofile([...profile ,{
-          id:Ids++,
-          name:name
-        }])}>submit</button>
-        <ul>
-          {
-            profile.map((date) => (<li key={date.id}>{date.name}</li>))
-          }
-        </ul>
-    </div>
+        <Task addList={addList} />
+        <h1 className='font-bold text-2xl py-3'> Todo </h1>
+        <hr />
+        {ListTodo.map((ListItem, i) => {
+          return (
+            <TodoList key={i} item={ListItem}  deleteItem={deleteListItem}/>
+          )
+        })}
+        </div>
+    </>
   )
 }
 
