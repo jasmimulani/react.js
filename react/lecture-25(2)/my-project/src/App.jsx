@@ -1,19 +1,25 @@
-
 import './App.css'
-import Cakeconainer from'./Components/Cakeconainer'
+// import CakeContainer from './Component/CakeContainer';
 import { Provider } from 'react-redux'
-import Store from'./Redux/Store'
+import Store from './Redux/Store';
+// import NewContainer from './Component/NewContainer';
+import IceContainer from './Component/IceContainer';
+
 function App() {
-  
 
   return (
     <>
-    <Provider store ={Store}>
-           <Cakeconainer/>
-    </Provider>
+      <Provider store={Store}>
+        {/* <CakeContainer /> */}
+        {/* <NewContainer/> */}
+        <IceContainer/>
+      </Provider>
+        
+      
 
+  
     </>
-  )
+  );
 }
 
 export default App
