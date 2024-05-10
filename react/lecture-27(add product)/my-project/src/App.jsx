@@ -1,29 +1,23 @@
 import React from 'react'
-import { ADD_TO_CART, EMPTY_CART, REMOVE_TO_CART } from './ProductData/Constant'
-import { useDispatch } from 'react-redux'
-import { productData } from './ProductData/ProAction'
-import { addTocart, emptycart, removeTocart } from './ProductData/Action'
-import Headre from './Headre'
+import Headre from './Components/Headre'
+import {BrowserRouter,Routes ,Route} from'react-router-dom'
+import ProductMain  from'./Pages/ProductMain'
+import Cart from './Pages/Cart'
 
 function App() {
 
-   const dispatch =useDispatch()
-
-   const product ={
-      name:'iphone',
-      color:'matteblue',
-      price:60000,
-      chip:'M2'
-   }
+ 
   return (
-    <div>
+    <>
+    <BrowserRouter>
       <Headre/>
-      <button onClick={() =>dispatch(addTocart(product))}>Add to cart</button>
-      <button onClick= {() => dispatch(removeTocart(product))}>Add to cart</button>
-      <button onClick= {() =>dispatch (emptycart())}>Add to cart</button>
-      <button onClick= {() =>dispatch (productData())}/>
-     
-    </div>
+   <Routes>
+      <Route path='/' element={<ProductMain/>}></Route>
+      <Route path='/Cart' element={<Cart/>}></Route>
+   </Routes>
+    </BrowserRouter>
+    
+    </>
   )
 }
 

@@ -1,16 +1,15 @@
 import RootReducer from './RootReducre';
-import {configureStore} from '@reduxjs/toolkit'
-// import { applyMiddleware } from "@reduxjs/toolkit";
-import { createDynamicMiddleware } from "@reduxjs/toolkit";
-import productsaga from './ProductSaga';
+import { configureStore } from '@reduxjs/toolkit';
+import createSagaMiddleware from'redux-saga'
+import productSaga from './ProductRedux/ProductSaga';
 
 
-const sagaMiddelware = createDynamicMiddleware()
+const sagaMiddelware = createSagaMiddleware()
 
   const store = configureStore({
-   reducer:RootReducer,
+    reducer:RootReducer,
     middleware:() =>[sagaMiddelware]
   }) 
-  middleware.run(productsaga)
+  sagaMiddelware.run(productSaga)
 
   export default store
