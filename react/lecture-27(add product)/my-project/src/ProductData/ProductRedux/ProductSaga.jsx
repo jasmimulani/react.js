@@ -10,7 +10,6 @@ import { PRODUCT_LIST,PRODUCT_SET } from '../Redux/Constant'
    
  }
 
-
  function* productsaga() {
    yield takeEvery(PRODUCT_LIST, getproduct)  
  }

@@ -1,22 +1,33 @@
+import { json } from "react-router-dom";
 import { ADD_TO_CART,REMOVE_TO_CART,EMPTY_CART } from "./Constant";
 
 
-const Reducer = (data=[],action) =>{
+
+const getcartdatafromLocalstorage = () => {
+    const cartData = localStorage.getItem("cart")
+    return cartData ? JSON.parse(cartData) : [];
+}
+
+
+const Reducer = (state = getcartdatafromLocalstorage(),action) =>{
     switch(action.type){
         case ADD_TO_CART:
             console.warn('add to cart called',action);
-            return[action.data, ...data]
-            
+            const updataerdcartAdd = [action.data , ...state]
+            localStorage.setItem("cart" ,JSON.stringify(updataerdcartAdd))
+            return updataerdcartAdd
+
             case REMOVE_TO_CART:
                 console.warn('remove to cart called',action);
-                // data.length = data.length -1
-                data.length = data.length ? data.length -1 : []
-                return[...data]
+                const updataerdcartRemove = state.filter(item => item.id !== action.data)
+                localStorage.setItem("cart" ,JSON.stringify(updataerdcartRemove))
+                return updataerdcartRemove
 
                 case EMPTY_CART:
                     console.warn("empty cart",action);
-                    return data=[]
-                    default:return data
+                    localStorage.removeItem("cart")
+                    return []
+                    default:return state
             }
             
         }

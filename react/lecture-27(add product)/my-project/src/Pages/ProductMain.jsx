@@ -26,7 +26,7 @@ const ProductMain = () => {
       <button  className='btn' onClick={() => dispatch(emptycart())} >emptycart</button>
       <button  className='btn' onClick={() => dispatch(productData())} >ProductCart</button> */}
 
-      <div className='flex flex-wrap'>
+      <div className='flex flex-wrap '>
         {
           data.flat().map((item) => {
             return (
