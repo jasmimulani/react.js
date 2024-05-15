@@ -23,7 +23,7 @@ const Axios_Post = () => {
 
      const handleUpdate = (e) =>{
         e.preventDefault()
-        axios.post('http://localhost:3000/Product' ,inputData)
+      axios.put('https://jsonplaceholder.typicode.com/todos/1',inputData)
         .then((res) =>{
             console.log(res);
         })
@@ -31,7 +31,7 @@ const Axios_Post = () => {
 
      const handleDelete = (e) =>{
         e.preventDefault()
-        axios.post('http://localhost:3000/Product' ,inputData)
+        axios.delete('https://jsonplaceholder.typicode.com/todos/1' ,inputData)
         .then((res) =>{
             console.log(res);
         })
