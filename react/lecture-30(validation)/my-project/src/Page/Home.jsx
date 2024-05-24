@@ -6,11 +6,10 @@ const Home = () => {
         localStorage.removeItem('signup')
             window.location.reload()
      }
-
       const deleteaccount =  () =>{
         localStorage.clear() 
-        window.location.reload()
-      }
+        window.location.reload() 
+      } 
   return (
     <div>
       <h1>Home Page</h1><br/>
