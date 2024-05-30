@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Componets/Navbar'
 import { FaSearch } from "react-icons/fa";
+import { Link, NavLink } from 'react-router-dom';
 
 
 const Home = () => {
@@ -28,12 +29,14 @@ const Home = () => {
             </button>
           </div>
           <div>
+            <NavLink to='add'>
             <button
               type="button"
               className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               Add user
             </button>
+            </NavLink>
           </div>
         </div>
         <div className="mt-6 flex flex-col">
@@ -123,9 +126,9 @@ const Home = () => {
                         9537023456
                       </td>
                       <td className="whitespace-nowrap px-[20px] py-[8px] text-right text-sm font-medium">
-                        <a href="#" className="bg-gray-300 px-[20px] py-[8px] rounded-3xl me-[10px]">
+                        <Link to='/EditUser' className="bg-gray-300 px-[20px] py-[8px] rounded-3xl me-[10px]">
                           Edit
-                        </a>
+                        </Link>
                         <a href="#" className=" bg-gray-300 px-[20px] py-[8px] rounded-3xl">
                           Delete
                         </a>
@@ -151,11 +154,10 @@ const Home = () => {
                       </td>
                       <td className="whitespace-nowrap px-12 py-4">
                         <div className="text-sm text-gray-900 ">Jane</div>
-
                       </td>
                       <td className="whitespace-nowrap px-4 py-4">
                         <span className="text-sm text-gray-700">
-                          doe
+                          Deo
                         </span>
                       </td>
                       <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
@@ -165,12 +167,12 @@ const Home = () => {
                         21
                       </td>
                       <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
-                        9044357645
+                        9825698765
                       </td>
-                      <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
-                        <a href="#" className="bg-gray-300 px-[20px] py-[8px] rounded-3xl me-[10px]">
+                      <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium"> 
+                         <Link to='/EditUser' className="bg-gray-300 px-[20px] py-[8px] rounded-3xl me-[10px]">
                           Edit
-                        </a>
+                        </Link>
                         <a href="#" className=" bg-gray-300 px-[20px] py-[8px] rounded-3xl">
                           Delete
                         </a>
@@ -183,7 +185,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
     </div>
   )
 }
