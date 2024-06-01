@@ -10,9 +10,9 @@ const Error = () => {
     <div>
        <Navbar/>
           <h1 className='text-3xl font-normal text-center'>Error 404</h1>
-          <button onClick={() => navigate1(-1)} className=' text-blod bg-red-600 py-[10px] me-[10px] px-[50px]'>Go Back</button>
+          <button onClick={() => navigate1(-1)} className=' text-blod bg-black text-white hover:bg-red-600 py-[10px] me-[10px] px-[50px]'>Go Back</button>
           <Link to='/contact'>
-          <button className='  bg-green-600  py-[10px] px-[50px]'>Contact</button>
+          <button className=' bg-black text-white hover:bg-green-500   py-[10px] px-[50px]'>Contact</button>
           </Link>
 
     </div>
