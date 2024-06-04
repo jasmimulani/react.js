@@ -10,8 +10,6 @@ import { Link } from 'react-router-dom';
 // import { number } from 'yup';
 
 
-
-
 const EditUser = () => {
 
       
@@ -174,3 +172,4 @@ const EditUser = () => {
 };
 
 export default EditUser;
+
