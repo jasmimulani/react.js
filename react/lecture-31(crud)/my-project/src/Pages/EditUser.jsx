@@ -1,12 +1,13 @@
 import React from 'react';
 // import { useFormik } from 'formik';
 // import * as Yup from 'yup';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,useParams} from 'react-router-dom';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import { FaArrowRight } from "react-icons/fa"
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+// import { number } from 'yup';
 
 
 
@@ -16,22 +17,25 @@ const EditUser = () => {
       
  const  navigate = useNavigate()
 
+
+ const {id} = useParams()
+
  const[user , setuser] = useState({
-  firstname: '',
+      firstname: '',
       lastname: '',
       age: '',
       profession: '',
-      mobile: ''
+      number: ''
  })
 
   const loaduserwithid = async() =>{
-    const res = await axios.get('http://localhost:3000/User')
+    const res = await axios.get(`http://localhost:3000/User/${id}`)
     setuser(res.user)
   }
 
    const onSubmitedituser = async() => {
     e.preventDefault();
-    await axios.put('http://localhost:3000/User',user)
+    await axios.put(`http://localhost:3000/User/${id}`, user)
     navigate('/')
    }
   
@@ -79,8 +83,8 @@ const EditUser = () => {
             type="text"
             id="firstname"
             className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"              onChange={(e) => setuser({...user , firstname:e.target.value})}
-            // {...formik.getFieldProps('firstname')}
-          />
+            />
+            {/* {...formik.getFieldProps('firstname')} */}
           {/* {formik.touched.firstname && formik.errors.firstname ? (
             <div className="text-red-500 text-sm">{formik.errors.firstname}</div>
           ) : null} */}
@@ -93,9 +97,10 @@ const EditUser = () => {
           <input
             type="text"
             id="lastname"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"              onChange={(e) => setuser({...user , lastname:e.target.value})}
-            // {...formik.getFieldProps('lastname')}
-          />
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , lastname:e.target.value})}
+
+            />
+             {/* {...formik.getFieldProps('lastname')} */}
           {/* {formik.touched.lastname && formik.errors.lastname ? (
             <div className="text-red-500 text-sm">{formik.errors.lastname}</div>
           ) : null} */}
@@ -108,9 +113,9 @@ const EditUser = () => {
           <input
             type="number"
             id="age"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"             onChange={(e) => setuser({...user , age:e.target.value})}
-            // {...formik.getFieldProps('age')}
-          />
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , age:e.target.value})}
+            />
+            {/* {...formik.getFieldProps('age')} */}
           {/* {formik.touched.age && formik.errors.age ? (
             <div className="text-red-500 text-sm">{formik.errors.age}</div>
           ) : null} */}
@@ -123,26 +128,26 @@ const EditUser = () => {
           <input
             type="text"
             id="profession"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"             onChange={(e) => setuser({...user , profession:e.target.value})}
-            // {...formik.getFieldProps('profession')}
-          />
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , profession:e.target.value})}
+
+            />
+          {/* {...formik.getFieldProps('profession')} */}
           {/* {formik.touched.profession && formik.errors.profession ? (
             <div className="text-red-500 text-sm">{formik.errors.profession}</div>
           ) : null} */}
         </div>
-        
-       
-        
+         
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="mobile">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="number">
             Mobile Number
           </label>
           <input
             type="tel"
             id="mobile"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"             onChange={(e) => setuser({...user , mobile:e.target.value})}
-            // {...formik.getFieldProps('mobile')}
-          />
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , number:e.target.value})}
+            />
+             {/* {...formik.getFieldProps('mobile')} */}
+
           {/* {formik.touched.mobile && formik.errors.mobile ? (
             <div className="text-red-500 text-sm">{formik.errors.mobile}</div>
           ) : null} */}
@@ -151,7 +156,6 @@ const EditUser = () => {
         <div className='flex justify-between'>
           <Link to="/">
             <button
-              type="submit"
               className="inline-flex w-fit-content items-center justify-center rounded-md  bg-black text-white hover:bg-gray-300  hover:text-black px-6 py-2 font-semibold leading-6  ">
               <FaArrowLeft
               className="me-2"/> Go back

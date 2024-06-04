@@ -8,43 +8,22 @@ import axios from 'axios'
 export function Home1() {
 
 
-  const user = [
-    {
-      name: 'John Doe',
-      title: 'Front-end Developer',
-      department: 'Engineering',
-      email: 'john@devui.com',
-      role: 'Developer',
-      image:
-        'https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80',
-    },
-    {
-      name: 'Jane Doe',
-      title: 'Back-end Developer',
-      department: 'Engineering',
-      email: 'jane@devui.com',
-      role: 'CTO',
-      image:
-        'https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
-    },
-  ]
-
-
-
-    const [data , setData] = useState([])
+    const [data , setData] = useState([])  
+    console.log(data);
 
       const loaduser = async() =>{
         const res = await axios.get('http://localhost:3000/User')
-        console.log(res.data,"userres");
+        console.log(res.data,"users");
         setData(res.data)
       }
+
       useEffect(() =>{
         loaduser()
       } , [])
 
        const onDelete = (id) => {
-        axios.delete('http://localhost:3000/User')
-        .then((Response) => {
+        axios.delete(`http://localhost:3000/User/${id}`)
+        .then((response) => {
           loaduser()
         })
         .catch((error) => {
@@ -144,7 +123,7 @@ export function Home1() {
                           </div>
                           <div className="ml-4">
                             <div className="text-sm  text-gray-900">
-                             {value.username}
+                             {value.firstname}
                             </div>
                             
                           </div>
@@ -152,7 +131,7 @@ export function Home1() {
                       </td>
                       <td className="whitespace-nowrap px-12 py-4">
                         <div className="text-sm font-medium text-gray-900 ">
-                          {value.name}
+                          {value.lastname}
                         </div>
                       </td>
                       <td className="whitespace-nowrap px-4 py-4">
@@ -162,7 +141,7 @@ export function Home1() {
                       <td className="whitespace-nowrap px-4 py-4">
                         <span className="text-sm">
 
-                        {value.phone}
+                        {value.number}
                         </span>
                       </td>
                       

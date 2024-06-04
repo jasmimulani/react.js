@@ -9,44 +9,41 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
 
 
-
-
-
 const Add = () => {
 
-    const navigate = useNavigate() 
+  const navigate = useNavigate()
 
 
-    const[user , setuser] = useState({
-      firstname:"",
-          lastname:"",
-          age:"",
-          profession:'',
-          number:'',
-          image:null
-    })
+  const [user, setUser] = useState({
+    firstname: "",
+    lastname: "",
+    age: "",
+    profession: '',
+    number: '',
+    image: null
+  })
 
-     const handleimagechane = (e) =>{
-      const file = e.target.file[0];
-      if(file){
-        const reader = new FileReader();
-        reader.onloadend = () =>{
+  const handleImageChange = (e) => {
+    const file = e.target.file[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
 
-          setuser({...user , image:reader.result})
+        setUser({ ...user, image: reader.result })
 
-        }
-          reader.readAsDataURL(file)
       }
+      reader.readAsDataURL(file)
+    }
 
-     }
+  }
 
 
-  const onSubmit = (e)=>{
-    e.prevantDeafult();
-    axios.post('http://localhost:3000/User',user)
-    .then(() =>{
-      navigate("/")
-    })
+  const OnSubmit = (e) => {
+    e.preventDefault();
+    axios.post('http://localhost:3000/User', user)
+      .then(() => {
+        navigate("/")
+      })
   }
 
 
@@ -78,7 +75,7 @@ const Add = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       {/* <form className="bg-white p-6 rounded shadow-md w-full max-w-sm" onSubmit={formik.handleSubmit}> */}
-      <form className="bg-white p-6 rounded shadow-md w-full max-w-sm" onSubmit={onSubmit}>
+      <form className="bg-white p-6 rounded shadow-md w-full max-w-sm" onSubmit={OnSubmit}>
         <h1 className="text-2xl font-bold mb-4 text-center">Add User</h1>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstname">
@@ -87,8 +84,8 @@ const Add = () => {
           <input
             type="text"
             id="firstname"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"             onChange={(e) => setuser({...user , firstname:e.target.value})}/>
-             {/* {...formik.getFieldProps('firstname')}  */}
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50" onChange={(e) => setUser({ ...user, firstname: e.target.value })} />
+          {/* {...formik.getFieldProps('firstname')}  */}
           {/* {formik.touched.firstname && formik.errors.firstname ? (
             <div className="text-red-500 text-sm">{formik.errors.firstname}</div>
           ) : null} */}
@@ -100,9 +97,10 @@ const Add = () => {
           <input
             type="text"
             id="lastname"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"              // {...formik.getFieldProps('lastname')}
-            onChange={(e) => setuser({...user , lastname:e.target.value})}
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+            onChange={(e) => setUser({ ...user, lastname: e.target.value })}
           />
+          {/* {...formik.getFieldProps('lastname')} */}
           {/* {formik.touched.lastname && formik.errors.lastname ? (
             <div className="text-red-500 text-sm">{formik.errors.lastname}</div>
           ) : null} */}
@@ -114,9 +112,10 @@ const Add = () => {
           <input
             type="number"
             id="age"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"              // {...formik.getFieldProps('age')}
-            onChange={(e) => setuser({...user , age:e.target.value})}
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+            onChange={(e) => setUser({ ...user, age: e.target.value })}
           />
+          {/* {...formik.getFieldProps('age')} */}
           {/* {formik.touched.age && formik.errors.age ? (
             <div className="text-red-500 text-sm">{formik.errors.age}</div>
           ) : null} */}
@@ -128,10 +127,10 @@ const Add = () => {
           <input
             type="text"
             id="profession"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  
-            // {...formik.getFieldProps('profession')}
-            onChange={(e) => setuser({...user , profession:e.target.value})}
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+            onChange={(e) => setUser({ ...user, profession: e.target.value })}
           />
+          {/* {...formik.getFieldProps('profession')} */}
           {/* {formik.touched.profession && formik.errors.profession ? (
             <div className="text-red-500 text-sm">{formik.errors.profession}</div>
           ) : null} */}
@@ -142,41 +141,40 @@ const Add = () => {
           </label>
 
           <input
-              type="tel"
-              id="mobile"
-              className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , mobile:e.target.value})} />
+            type="tel"
+            id="number"
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50" onChange={(e) => setUser({ ...user, number: e.target.value })} />
 
           {/* {formik.touched.mobile && formik.errors.mobile ? (
             <div className="text-red-500 text-sm">{formik.errors.mobile}</div>
           ) : null} */}
         </div>
         <div>
-                                <label htmlFor="image" className="text-base font-medium text-gray-900">Image</label>
-                                <div className="mt-2">
-                                    <input
-                                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                                        type="file"
-                                        placeholder="image"
-                                        id="image"
-                                        name='image'
-                                        onChange={handleimagechane}
-                                    />
-                                </div>
-                            </div>
+          <label htmlFor="image" className="text-base font-medium text-gray-900">Image</label>
+          <div className="mt-2">
+            <input
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              type="file"
+              placeholder="image"
+              id="image"
+              name='image'
+              onChange={handleImageChange}
+            />
+          </div>
+        </div>
         <div className='flex justify-between mt-5'>
           <Link to="/">
             <button
-              type="submit"
               className="inline-flex w-fit-content items-center justify-center rounded-md  bg-black text-white hover:bg-gray-300  hover:text-black px-6 py-2 font-semibold leading-6  ">
               <FaArrowLeft
-              className="me-2"/> Go back
+                className="me-2" /> Go back
             </button>
           </Link>
           <button
             type="submit"
             className="inline-flex w-fit-content items-center justify-center rounded-md  bg-black text-white hover:bg-gray-300  hover:text-black px-6 py-2 font-semibold leading-6">
-            Add user<FaArrowRight 
-              className="ml-2"/>
+            Add user<FaArrowRight
+              className="ml-2" />
           </button>
         </div>
       </form>
