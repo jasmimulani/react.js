@@ -29,7 +29,7 @@ const Add = () => {
       const reader = new FileReader();
       reader.onloadend = () => {
 
-        setUser({ ...user, image: reader.result })
+        setUser({...user, image: reader.result})
 
       }
       reader.readAsDataURL(file)

@@ -18,7 +18,7 @@ function App() {
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/*" element={<Error/>}/>
       <Route path="add" element={<Add/>}/>
-      <Route path="/EditUser" element={<EditUser/>}/>
+      <Route path="/EditUser/:userId" element={<EditUser/>}/>
       
     </Routes>
     </BrowserRouter> 

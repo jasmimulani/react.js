@@ -80,7 +80,8 @@ const EditUser = () => {
           <input
             type="text"
             id="firstname"
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"              onChange={(e) => setuser({...user , firstname:e.target.value})}
+            value={user.firstname}
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"     onChange={(e) => setuser({...user , firstname:e.target.value})}
             />
             {/* {...formik.getFieldProps('firstname')} */}
           {/* {formik.touched.firstname && formik.errors.firstname ? (
@@ -95,6 +96,8 @@ const EditUser = () => {
           <input
             type="text"
             id="lastname"
+            value={user.lastname}
+
             className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , lastname:e.target.value})}
 
             />
@@ -111,6 +114,8 @@ const EditUser = () => {
           <input
             type="number"
             id="age"
+            value={user.age}
+
             className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , age:e.target.value})}
             />
             {/* {...formik.getFieldProps('age')} */}
@@ -126,6 +131,8 @@ const EditUser = () => {
           <input
             type="text"
             id="profession"
+            value={user.profession}
+
             className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , profession:e.target.value})}
 
             />
@@ -142,6 +149,8 @@ const EditUser = () => {
           <input
             type="tel"
             id="mobile"
+            value={user.number}
+
             className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"  onChange={(e) => setuser({...user , number:e.target.value})}
             />
              {/* {...formik.getFieldProps('mobile')} */}
