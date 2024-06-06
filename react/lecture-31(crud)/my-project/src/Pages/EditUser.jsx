@@ -28,19 +28,20 @@ const EditUser = () => {
 
   const loaduserwithid = async() =>{
     const res = await axios.get(`http://localhost:3000/User/${id}`)
-    setuser(res.user)
+    setuser(res.data)
+    // console.log(res);
   }
+  
+  useEffect(() =>{
+   loaduserwithid();
+  }, [])
 
-   const onSubmitedituser = async() => {
-    e.preventDefault();
+   const onSubmitedituser = async(e) => {
+    e.preventDefault(); 
     await axios.put(`http://localhost:3000/User/${id}`, user)
     navigate('/')
-   }
+   } 
   
-     useEffect(() =>{
-      loaduserwithid();
-     })
-
 
   // const formik = useFormik({
   //   initialValues: {
@@ -81,7 +82,7 @@ const EditUser = () => {
             type="text"
             id="firstname"
             value={user.firstname}
-            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"     onChange={(e) => setuser({...user , firstname:e.target.value})}
+            className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"     onChange={(e) => setuser({...user ,firstname: e.target.value})}
             />
             {/* {...formik.getFieldProps('firstname')} */}
           {/* {formik.touched.firstname && formik.errors.firstname ? (

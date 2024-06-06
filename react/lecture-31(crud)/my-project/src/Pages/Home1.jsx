@@ -1,33 +1,55 @@
 import React from 'react'
 import Navbar from '../Componets/Navbar'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { FaSearch } from "react-icons/fa";
 import axios from 'axios'
 
 export function Home1() {
 
-  
-  
+
   const [data, setData] = useState([])
 
-  const [searchTerm , setsearchTerm] = useState('')
-  console.log(data);
+  const [searchTerm, setsearchTerm] = useState('')
+  const [currentpage, setcurrentpage] = useState(1)
+  const [perpage, setperpage] = useState(2)
+
+
+  const totalpages = Math.ceil(data.length / perpage)
+
+
+  const indexofLastData = currentpage + perpage
+  const indecofFristData = indexofLastData - perpage
+  const currentData = data.slice(indecofFristData,indexofLastData)
+
+  const peginate = (pagenumber) => {
+    setcurrentpage(pagenumber)
+  }
+
+  const nextpage = () => {
+    setperpage((prevpage) => prevpage + 1)
+  }
+
+  const prevpage = () => { 
+    setcurrentpage((prevpage) => prevpage - 1)
+  }
+
+  
 
   const loaduser = async () => {
     const res = await axios.get('http://localhost:3000/User')
     console.log(res.data, "users");
     setData(res.data)
   }
-
-   const filterData = data.filter(user => user.firstname.toLowerCase().includes(searchTerm.toLowerCase()) ||
-   user.lastname.toLowerCase().includes(searchTerm.toLowerCase())
-
-  )
-
   useEffect(() => {
     loaduser()
   }, [])
+
+  const filterData = data.filter(user => user.firstname.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    user.lastname.toLowerCase().includes(searchTerm.toLowerCase())
+  )
+
+
 
   const onDelete = (id) => {
     axios.delete(`http://localhost:3000/User/${id}`)
@@ -38,7 +60,6 @@ export function Home1() {
         console.log(error, 'error user data');
       })
   }
-
 
   return (
     <div>
@@ -72,7 +93,6 @@ export function Home1() {
             </Link>
           </div>
         </div>
-
         <div className="mt-6 flex flex-col m-14">
           <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
@@ -117,7 +137,6 @@ export function Home1() {
                     </tr>
                   </thead>
                   {filterData.map((value) => {
-
                     return (
                       <tbody className="divide-y divide-gray-200 bg-white" key={value.id}>
                         <tr>
@@ -138,7 +157,6 @@ export function Home1() {
                                 <div className="text-sm  text-gray-900">
                                   {value.firstname}
                                 </div>
-
                               </div>
                             </div>
                           </td>
@@ -153,11 +171,9 @@ export function Home1() {
                           <td></td>
                           <td className="whitespace-nowrap px-4 py-4">
                             <span className="text-sm">
-
                               {value.number}
                             </span>
                           </td>
-
                           <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
                             <span className="text-sm">{value.profession}</span>
                           </td>
@@ -177,6 +193,30 @@ export function Home1() {
                 </table>
               </div>
             </div>
+          </div>
+
+          <div className="flex items-center justify-center pt-6">
+            <Link className='mx-2 text-sm font-semibold text-gray-900'>
+              <button onClick={prevpage} disabled={currentpage === 1}>
+                <span>&larr;</span>
+                <span>previous</span>
+              </button>
+            </Link>
+            {
+              Array.from({ length: totalpages }, (_, i) => (
+                <NavLink className={`mx-1 flex justify-center items-center rounded-md border-gray-400 px-3 py-2 text-gray-300 hover:bg-black hover:text-white`} style={{
+                  backgroundColor: currentpage == i + 1 ? 'black' : 'transparent', color: currentpage == i + 1 ? 'white' : 'inherit'
+                }}>
+
+                  <button key={i} onClick={() => peginate(i + 1)}>{i + 1}</button>
+
+                </NavLink>
+              ))
+            }
+            <Link className='mx-2 text-sm font-semibold text-gray-900'>
+              <span>Next </span>
+              <span>&rarr;</span>
+            </Link>
           </div>
         </div>
       </section>
