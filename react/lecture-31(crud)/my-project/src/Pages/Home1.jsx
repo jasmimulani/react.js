@@ -194,7 +194,6 @@ export function Home1() {
               </div>
             </div>
           </div>
-
           <div className="flex items-center justify-center pt-6">
             <Link className='mx-2 text-sm font-semibold text-gray-900'>
               <button onClick={prevpage} disabled={currentpage === 1}>
@@ -207,9 +206,7 @@ export function Home1() {
                 <NavLink className={`mx-1 flex justify-center items-center rounded-md border-gray-400 px-3 py-2 text-gray-300 hover:bg-black hover:text-white`} style={{
                   backgroundColor: currentpage == i + 1 ? 'black' : 'transparent', color: currentpage == i + 1 ? 'white' : 'inherit'
                 }}>
-
                   <button key={i} onClick={() => peginate(i + 1)}>{i + 1}</button>
-
                 </NavLink>
               ))
             }
@@ -221,5 +218,5 @@ export function Home1() {
         </div>
       </section>
     </div>
-  )
+  )  
 }
