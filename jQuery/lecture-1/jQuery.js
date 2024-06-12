@@ -66,7 +66,7 @@
 
 // $(function(){
 //     $("#001").click(function(){
-//         $("img").hide()
+//         $("img").hide() 
 //     })
 // })
 
