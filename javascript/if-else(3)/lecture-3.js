@@ -6,9 +6,9 @@
 // if(num % 2 == 0)
 // {
 // console.log("it's even number")
-// }
+// } 
 // else{
-//   console.log("it's odd number")
+//   console.log("it's odd number") 
 // }
 
 
