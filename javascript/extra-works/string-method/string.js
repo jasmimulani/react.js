@@ -182,4 +182,53 @@ const str12 = 'hello i am a astring of 12';
 console.log(str12.startsWith('hello'));
 // console.log(str12.startsWith('2'));
 
-       
+// **************************************************************
+// substring
+//  find the positon of number ti given by user
+
+ const str13 = 'jasmi';
+
+ console.log(str13.substring(2));
+ console.log(str13.substring(0 , 2));
+
+//  *************************************************************
+// to string
+//  convert to object in to srting
+
+  const stringobj= new String('foo')
+  console.log(stringobj)
+  console.log(stringobj.toString());
+
+// *************************************************************************
+// uppercase()
+
+const str14 = 'the quick brwn fox jumps over the lazy dog';
+console.log(str14.toUpperCase());
+
+// *******************************************************************
+//lowercase()
+
+const str15 = 'THE QUICK BROW FOX JUMPS OVER THE LZY DOG';
+console.log(str15.toLowerCase());
+
+// ************************************************************************
+//  trim
+
+const str16 = ' hello world    ';
+console.log(str16.trim());
+
+// **********************************************************
+// trim start
+
+const str17 = '                   jasmi';
+console.log(str17.trimStart());
+
+// *******************************************************************
+// trimend
+const str18 = 'jasmi           ';
+console.log(str18.trimStart());
+
+// ******************************************************************
+// valueof
+ const str19 ='mulani';
+ console.log(str19.valueOf());
