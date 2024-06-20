@@ -8,6 +8,7 @@ console.log(balance.toString());
 
 // method
 
+
 // ******************************************************************************
 // tofixed
 
@@ -28,4 +29,25 @@ const num4 = 10000000
 console.log(num4.toLocaleString());
 console.log(num4.toLocaleString('en-IN'));
 
+// *******************************************************************
+//  value of()
+//  convert to object in to  umber
+const num5 = new Number(42);
+console.log(typeof num5);
+
+const num6 = num5.valueOf();
+console.log(num6);
+
+console.log(typeof num6);
+
+// ************************************************************************
+// exponential()
+//  point pachi na numver ne count kari ane + kare
+
+ function expo(x , f) {
+    return Number.parseFloat(x).toExponential(f) ; 
+ }
+
+ console.log(expo(1234567 , 2));
+ console.log(expo('12345678'));
 
