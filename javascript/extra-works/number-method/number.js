@@ -31,7 +31,7 @@ console.log(num4.toLocaleString('en-IN'));
 
 // *******************************************************************
 //  value of()
-//  convert to object in to  umber
+//  convert to object in to  nmber
 const num5 = new Number(42);
 console.log(typeof num5);
 
