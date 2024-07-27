@@ -155,9 +155,12 @@ nav{
  }
  
  .part-3 {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom:5%;
+    padding-left: 15%;
+
  }
  
  .section--3 {
@@ -225,8 +228,17 @@ nav{
     display: flex;
     justify-content: center;
  }
- 
- 
+.part-4{
+  display: flex;
+  justify-content: center;
+}
+.heading-4{
+    font-size:x-large;
+}
+.pera-4{
+    font-size: medium;
+    padding-top: 4%;
+}
 
 
 
