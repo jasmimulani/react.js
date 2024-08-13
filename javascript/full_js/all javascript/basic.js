@@ -19,7 +19,7 @@ var $cityNAme = "new york"; //valid
 // -------------------- section-2 => Data type ---------------------------
 // => Data types define the type of values that a variable can hold.
 // => data types:- 1.)primitive data type =  string , number , boolean , null, undefine , bigint , symbol
-//                 2.)object data types   =  An Object , An Array , A date, class
+//                 2.)object data types   =  An Object , An Array , A date, class 
 
 // number
 var myFavNum = 5;
@@ -356,7 +356,7 @@ fruits1.map((curuntelement, index, array) => {
 
 // --------------------------- -------main diffrence for each and map
 // difference between forEach and map method?
-
+  
 // return value
 // =>ForEach :- It doesn't  return a value. The forEach Method is used for iterating over the elements of an array and performing a side effect, such as modifying the array or perfoeming a task for each elements.
 // =>Map  :- It returns a new array containing the results of applying a function to each elements in the original array. The original array remains unchanged.
@@ -623,13 +623,111 @@ const getrollno = () => {
 getrollno();
 
 
+// ------------------------------lexical scoping------------------
+// const outerfun = (a) =>{
+//      let b=10;
+//       const innerfun = () =>{
+//            let sum = a+b;
+//            console.log(`the sum is ${sum}`);
+//       }
+//       innerfun();
+// }
+// outerfun(5)
+
 // --------------------------------------------closer--------------------------
 //  most important
 // child function perent ni roppeties use kare ane globel  variable use kare tene
+//  some time outer function not alive that time we can assec to theri properties
 
-//  promise
+const outerfun = (a) =>{
+  let b=10;
+   const innerfun = () =>{
+        let sum = a+b;
+        console.log(`the sum is ${sum}`);
+   }
+   return innerfun;
+}
+let inner =outerfun(5);
+console.dir(inner);
+inner();
+
+
+//----------------------------------------------------------------  promise -----------------------
+
+// task
+
+//  app muje promise karo ki  kal 10am me call karoge
+
+//  10am
+
+//  1: pending
+
+
+
 // asinc
 // awit
 
 
-// ------------------------ try catch block
+// ------------------------ try catch 
+
+// ----------- call method
+//  this key word is represent to a owner / object name 
+//  this represent youtuber1
+// -------------------------------simle call --------------------------------------------------
+
+//  const youtuber1 ={
+//   name:"thapa tecnical",
+//   content:"progrming",
+//   featurs: function(){
+//     console.log(`very friendly way of teaching,${this.name} my fav ${this.content} chanal`);
+//   }
+// }
+// youtuber1.featurs();
+
+//  const youtuber2 ={
+//   name:"kuchbhii",
+//   content:"programing$vlog"
+//  }
+//  youtuber1.featurs.call(youtuber2)
+
+//  ------------------------------------------ advance
+
+const youtuber1 ={
+  name:"thapa tecnical",
+  content:"progrming",
+  featurs: function(rating , supports){
+    console.log(`very friendly way of teaching,${this.name} my fav ${this.content} chanal i will love to give ${rating} star. please ${supports} ${this.name} chanal.`);
+  }
+}
+youtuber1.featurs(4,"subscribe");
+
+ const youtuber2 ={
+  name:"kuchbhii",
+  content:"programing$vlog"
+ }
+ youtuber1.featurs.call(youtuber2 ,5 ,"subscribe")
+
+ //  ---------------------------------apply method---------------------
+
+//   apply is exept argument as array and call is expet aargument as sepretly
+ youtuber1.featurs.apply(youtuber2 ,[6 ,"subscribe"])
+
+
+//  -------------------------------------bind mthod
+// object ne comman function sathe bind kariye tene => bind means bandhvu
+
+
+ const youtuber11 ={
+  name:" tecnical",
+  content:"progrming",
+  
+}
+
+
+ function featurs(){
+  console.log(`very friendly way of teaching,${this.name} my fav ${this.content} chanal`);
+}
+
+
+let you1 = featurs.bind(youtuber11);
+you1()
