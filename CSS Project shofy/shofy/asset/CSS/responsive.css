@@ -1,4 +1,4 @@
-@media (max-width :1600px) {
+@media (max-width :1366px) {
     .icon-4 {
         display: none;
     }
@@ -27,11 +27,11 @@
     }
 
     .section-5 {
-        width: 45%;
+        width: 50%;
     }
 
     .part-3-fix {
-        width: 60%;
+        width: 70%;
     }
 
     .section-7 {
